@@ -4,6 +4,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
+    max-width: 1920px;
 }
 
 .container {
@@ -138,7 +139,6 @@ nav_header_address {
     width: 100%;
     justify-content: center;
     position: relative;
-    height: 840px;
 }
 
 .list_services1 {
@@ -146,14 +146,16 @@ nav_header_address {
     width: 100%;
     justify-content: center;
     text-align: center;
+    height: 840px;
 }
 
 photo_service {
-    display: flex;
+    display: block;
     height: 420px;
+    width: 100%;
 }
 
-.hair_services {
+.hair_services1 {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -162,36 +164,35 @@ photo_service {
     background: #F5C32C;
     width: 100%;
     padding: 0;
+    flex-grow: 1;
 }
 
-.makeup_services {
-    font-size: 24px;
-    flex-grow: 1;
-    flex-direction: column;
-    display: flex;
-    flex-basis: auto;
+.makeup_services1 {
     text-align: center;
     justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    display: flex;
     background: #23BAEB;
+    flex-grow: 1;
     width: 100%;
 }
 
-.brow_services {
-    flex-direction: column;
-    display: flex;
-    font-size: 24px;
-    flex-basis: auto;
+.brow_services1 {
     text-align: center;
     justify-content: center;
-    flex-grow: 1;
+    flex-direction: column;
+    font-size: 24px;
+    display: flex;
     background: #F77474;
+    flex-grow: 1;
     width: 100%;
 }
 
 .name_service {
     font-size: 36px;
     display: flex;
-    margin-top: 132px;
+    margin: 132px;
     text-align: center;
     justify-content: center;
 }
@@ -201,6 +202,7 @@ photo_service {
     text-align: center;
     flex-direction: row;
     justify-content: center;
+    margin: 20px;
 }
 
 .service {
@@ -241,4 +243,196 @@ a.button8:hover {
 
 a.button8:active {
     background: white;
+}
+
+.container_our.studio {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background: rgb(34, 32, 32);
+    font-size: 24px;
+    color: white;
+}
+
+.text_studio {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    height: 840px;
+    margin: auto;
+}
+
+.photo_studio {
+    display: flex;
+    width: 50%;
+    padding: 150px;
+}
+
+.gallery_photo_studio {
+    display: flex;
+    height: 80%;
+    width: 80%;
+    background: url(../images/photos/119714.jpg) no-repeat center top / cover;
+    width: 850px;
+    height: 525px;
+    margin: auto;
+}
+
+.top_text_studio {
+    display: flex;
+    flex-direction: row;
+    margin-top: 110px;
+    margin-left: 270px;
+    text-align: center;
+    font-size: 36px;
+    padding: 15px;
+}
+
+.container_masters {
+    display: flex;
+    color: rgb(31, 26, 26);
+    max-width: 1920px;
+    justify-content: center;
+    position: relative;
+    align-items: stretch;
+}
+
+.master {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    background: #BD8E00;
+    width: 100%;
+    padding: 0;
+    flex-grow: 1;
+    height: 840px;
+    flex-grow: 1;
+}
+
+.master.b {
+    background: #F77474;
+    flex-grow: 1;
+}
+
+.master.c {
+    background: #9B51E0;
+    flex-grow: 1;
+}
+
+.photo_master {
+    display: flex;
+    background: url(../images/photos/gGOwnkKfxKU.jpg);
+    height: 50%;
+}
+
+.container_school {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background: black;
+}
+
+.photo.school {
+    background: url(../images/photos/images.jpg) no-repeat center top / cover;
+    width: 100%;
+    display: flex;
+    height: 840px;
+}
+
+.top_text.school {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+}
+
+.container_map {
+    display: flex;
+    align-content: stretch;
+    width: 100%;
+    background: rgb(36, 32, 32);
+    flex-flow: row wrap;
+}
+
+.picture.map {
+    display: block;
+    height: 425px;
+    width: 60%;
+    background: rgb(179, 170, 170);
+}
+
+.text.map {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background: rgb(109, 106, 106);
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.6;
+}
+
+.picture {
+    display: flex;
+    position: relative;
+    width: 40%;
+    height: 425px;
+    background: url(../images/photos/gogol1g.jpg) no-repeat center top / cover;
+}
+
+.description_master {
+    display: flex;
+    font-size: 36px;
+    color: black;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: row;
+    background: #3D3C3C;
+    color: #FCFAFA;
+    height: 340px;
+    justify-content: space-around;
+}
+
+.footer.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    width: 359px;
+    height: 264px;
+}
+
+.logo_services.footer {
+    display: block;
+    padding: 50px;
+    margin: auto;
+}
+
+.footer.text {
+    text-indent: 50px;
+    opacity: 0.6;
+    margin: auto;
+}
+
+.text_center.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.footer.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
 }
