@@ -3,17 +3,20 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
-    margin: 0px;
+    margin: 0px auto;
     max-width: 1920px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 hr {
     width: 75%;
+    margin: 0px;
+    border-top: 0px;
 }
 
 .container_header {
@@ -39,8 +42,6 @@ hr {
     text-transform: uppercase;
 }
 
-.menu_burger {}
-
 .logo {
     display: flex;
     width: 90px;
@@ -64,7 +65,7 @@ hr {
     display: flex;
     color: #F57373;
     text-transform: uppercase;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 .star {
@@ -114,6 +115,7 @@ a.button7:active {
 }
 
 .nav_header_footer {
+    display: flex;
     height: 50px;
     width: 100%;
     background: black;
@@ -138,36 +140,46 @@ nav_header_address {
     color: white;
     width: 100%;
     justify-content: center;
-    position: relative;
 }
 
 .list_services1 {
+    /* flex-direction: column; */
     display: flex;
     width: 100%;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
     height: 840px;
 }
 
-photo_service {
-    display: block;
-    height: 420px;
-    width: 100%;
+.service_holden {
+    flex-direction: column;
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
 }
 
-.hair_services1 {
+.photo_service {
+    display: flex;
+    flex-basis: 50%;
+    background: url("../images/photos/images (1).jpg") no-repeat center top / cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hair_services {
     display: flex;
     text-align: center;
     justify-content: center;
     flex-direction: column;
     font-size: 24px;
-    background: #F5C32C;
+    background: #f9c21d;
     width: 100%;
     padding: 0;
     flex-grow: 1;
+    align-items: center;
 }
 
-.makeup_services1 {
+.hair_services.make {
     text-align: center;
     justify-content: center;
     flex-direction: column;
@@ -178,7 +190,7 @@ photo_service {
     width: 100%;
 }
 
-.brow_services1 {
+.hair_services.brow {
     text-align: center;
     justify-content: center;
     flex-direction: column;
@@ -191,10 +203,12 @@ photo_service {
 
 .name_service {
     font-size: 36px;
-    display: flex;
-    margin: 132px;
+    white-space: nowrap;
+    margin-bottom: 29px;
     text-align: center;
-    justify-content: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 75%;
 }
 
 .service_ps {
@@ -203,6 +217,7 @@ photo_service {
     flex-direction: row;
     justify-content: center;
     margin: 20px;
+    align-items: center;
 }
 
 .service {
@@ -310,7 +325,23 @@ a.button8:active {
     padding: 0;
     flex-grow: 1;
     height: 840px;
-    flex-grow: 1;
+}
+
+.name_master {
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+}
+
+.profession {
+    display: flex;
+    font-size: 36px;
+    background: #FCF0F0;
+    width: 100%;
+    height: 78px;
+    justify-content: center;
+    opacity: 0.6;
+    flex-direction: column;
 }
 
 .master.b {
@@ -325,8 +356,9 @@ a.button8:active {
 
 .photo_master {
     display: flex;
-    background: url(../images/photos/gGOwnkKfxKU.jpg);
+    background: url(../images/photos/gGOwnkKfxKU.jpg) no-repeat center top / cover;
     height: 50%;
+    justify-content: center;
 }
 
 .container_school {
@@ -344,12 +376,38 @@ a.button8:active {
     height: 840px;
 }
 
+.content_top.school {
+    display: flex;
+    background: rgb(94, 91, 91);
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.col_content.school {
+    display: flex;
+    background: rgb(85, 83, 83);
+    font-size: 24px;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+}
+
+.content.school {
+    display: flex;
+    width: 670px;
+    height: 294px;
+    margin: auto;
+    text-indent: 20px;
+    flex-direction: column;
+    padding: 50px;
+}
+
 .top_text.school {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 100%;
     padding: 50px;
+    height: 50%;
 }
 
 .container_map {
