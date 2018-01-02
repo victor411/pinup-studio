@@ -65,7 +65,6 @@ hr {
     display: flex;
     color: #F57373;
     text-transform: uppercase;
-    /* margin-left: 10px; */
 }
 
 .star {
@@ -158,6 +157,10 @@ nav_header_address {
     align-items: center;
 }
 
+.logo_services {
+    background: url("../images/photos/ghost.png") no-repeat center top / cover;
+}
+
 .photo_service {
     display: flex;
     flex-basis: 50%;
@@ -188,6 +191,14 @@ nav_header_address {
     background: #23BAEB;
     flex-grow: 1;
     width: 100%;
+}
+
+.photo_service.make {
+    background: url("../images/photos/makeup.jpg.jpg") no-repeat center top / cover;
+}
+
+.photo_service.brow {
+    background: url("../images/photos/brow.jpg") no-repeat center top / cover;
 }
 
 .hair_services.brow {
@@ -266,8 +277,15 @@ a.button8:active {
     flex-direction: row;
     width: 100%;
     background: rgb(34, 32, 32);
-    font-size: 24px;
+    font-size: 18px;
     color: white;
+    padding: 20px;
+}
+
+.stud {
+    color: #F78181;
+    margin-left: 15px;
+    /* display:  flex; */
 }
 
 .text_studio {
@@ -276,7 +294,11 @@ a.button8:active {
     width: 50%;
     justify-content: center;
     height: 840px;
+    margin: 20;
     margin: auto;
+    /* align-items:  center; */
+    text-align: center;
+    line-height: 25px;
 }
 
 .photo_studio {
@@ -297,17 +319,18 @@ a.button8:active {
 
 .top_text_studio {
     display: flex;
-    flex-direction: row;
-    margin-top: 110px;
+    /* flex-direction: row; */
+    /* margin-top: 110px; */
     margin-left: 270px;
     text-align: center;
     font-size: 36px;
-    padding: 15px;
+    padding: 30px;
+    /* padding:  20px; */
 }
 
 .container_masters {
     display: flex;
-    color: rgb(31, 26, 26);
+    /* color: rgb(31, 26, 26); */
     max-width: 1920px;
     justify-content: center;
     position: relative;
@@ -319,11 +342,12 @@ a.button8:active {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 24px;
+    font-size: 24;
     background: #BD8E00;
     width: 100%;
     padding: 0;
     flex-grow: 1;
+    /* color:  white; */
     height: 840px;
 }
 
@@ -331,6 +355,7 @@ a.button8:active {
     display: flex;
     font-size: 36px;
     justify-content: center;
+    /* align-items:  center; */
 }
 
 .profession {
