@@ -409,7 +409,7 @@ a.button8:active {
     flex-direction: column;
     padding: 50px;
     height: 50%;
-    align-items:  center;
+    align-items: center;
 }
 
 .container_map {
@@ -473,7 +473,7 @@ a.button8:active {
 
 .logo_services.footer {
     display: block;
-    padding: 50px;
+    padding: 45px;
     margin: auto;
 }
 
@@ -504,23 +504,18 @@ span.color_makeup {
     font-size: 64px;
     color: #F77474;
     letter-spacing: -0.03em;
-    /* font-weight: 300; */
-    /* text-align:  center; */
 }
 
 span.laboratory {
     font-size: 48px;
     color: black;
-    /* font-weight: bold; */
 }
 
 span.training {
     font-size: 48px;
     letter-spacing: 0.04em;
     color: black;
-    /* font-weight: bold; */
     margin-top: 126px;
-    /* margin-right: 25px; */
     text-align: center;
 }
 
@@ -536,12 +531,6 @@ span.training {
     flex-direction: column-reverse;
 }
 
-.service_ps {}
-
-span.phone_header {}
-
 .nav_header_phone {
     text-decoration: underline;
 }
-
-.nav_header_phone {}
