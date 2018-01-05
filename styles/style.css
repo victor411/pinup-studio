@@ -50,6 +50,7 @@ hr {
     margin-top: 20px;
     margin-left: 20px;
     align-self: flex-start;
+    /* background: url("../images/photos/Image_of_a_diamond.gif") no-repeat center top / cover;*/
 }
 
 .pus {
@@ -120,13 +121,15 @@ a.button7:active {
     background: black;
     opacity: 0.8;
     display: flex;
+    align-items: center;
     align-self: flex-end;
     justify-content: space-around;
 }
 
 .nav_header_phone span {
     font-size: 24px;
-    text-decoration: underline;
+    text-decoration: none;
+    color: white;
 }
 
 nav_header_address {
@@ -151,8 +154,8 @@ nav_header_address {
 .service_holden {
     flex-direction: column;
     display: flex;
-    flex-basis: 50%;
     align-items: center;
+    flex-grow: 1;
 }
 
 .logo_services {
@@ -167,6 +170,22 @@ nav_header_address {
     height: 100%;
 }
 
+.photo_service_h {
+    display: flex;
+    flex-basis: 50%;
+    background: url("../images/photos/sasha.jpg") no-repeat center top / cover;
+    width: 100%;
+    height: 100%;
+}
+
+.photo_service_h.make {
+    background: url("../images/photos/lora.jpg") no-repeat center top / cover;
+}
+
+.photo_service_h.brow {
+    background: url("../images/photos/bro.jpg") no-repeat center top / cover;
+}
+
 .hair_services {
     display: flex;
     text-align: center;
@@ -178,17 +197,29 @@ nav_header_address {
     padding: 0;
     flex-grow: 1;
     align-items: center;
+    flex-basis: 50%;
 }
 
-.hair_services.make {
+.hair_services_h {
+    display: flex;
     text-align: center;
     justify-content: center;
     flex-direction: column;
     font-size: 24px;
-    display: flex;
-    background: #23BAEB;
-    flex-grow: 1;
+    background: #BD8E00;
     width: 100%;
+    padding: 0;
+    flex-grow: 1;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.hair_services.make {
+    background: #23BAEB;
+}
+
+.hair_services_h.make {
+    background: #F77474;
 }
 
 .photo_service.make {
@@ -199,25 +230,23 @@ nav_header_address {
     background: url("../images/photos/brow.jpg") no-repeat center top / cover;
 }
 
+.hair_services_h.brow {
+    background: #9B51E0;
+}
+
 .hair_services.brow {
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 24px;
-    display: flex;
     background: #F77474;
-    flex-grow: 1;
-    width: 100%;
 }
 
 .name_service {
-    font-size: 36px;
-    white-space: nowrap;
+    font-size: 25px;
     margin-bottom: 29px;
     text-align: center;
     text-overflow: ellipsis;
-    overflow: hidden;
     width: 75%;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 .service_ps {
@@ -225,7 +254,6 @@ nav_header_address {
     text-align: center;
     flex-direction: row;
     justify-content: center;
-    margin: 20px;
     align-items: center;
 }
 
@@ -243,7 +271,7 @@ nav_header_address {
     flex-direction: row;
     padding: 25px;
     font-weight: 600;
-    font-size: 36px;
+    font-size: px;
 }
 
 a.button8 {
@@ -271,13 +299,13 @@ a.button8:active {
 
 .container_our.studio {
     display: flex;
-    justify-content: center;
     flex-direction: row;
     width: 100%;
     background: rgb(34, 32, 32);
     font-size: 18px;
     color: white;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .stud {
@@ -290,8 +318,6 @@ a.button8:active {
     flex-direction: column;
     width: 50%;
     justify-content: center;
-    margin: 49px;
-    /* margin: auto; */
     line-height: 25px;
     text-indent: 20px;
 }
@@ -299,7 +325,6 @@ a.button8:active {
 .photo_studio {
     display: flex;
     width: 50%;
-    padding: 150px;
 }
 
 .gallery_photo_studio {
@@ -327,86 +352,6 @@ a.button8:active {
     max-width: 100%;
     justify-content: center;
     position: relative;
-    align-items: stretch;
-}
-
-.master {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 24;
-    background: #BD8E00;
-    width: 100%;
-    padding: 0;
-    flex-grow: 1;
-    /* color:  white; */
-    height: 840px;
-    font-weight: 300;
-}
-
-.name_master {
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
-    /* align-items:  center; */
-    font-weight: 300;
-    /* padding:  20px; */
-}
-
-.profession {
-    display: flex;
-    font-size: 20px;
-    background: #FCF0F0;
-    width: 100%;
-    height: 78px;
-    justify-content: center;
-    opacity: 0.6;
-    flex-direction: column;
-    color: black;
-}
-
-.profession_LB {
-    display: flex;
-    font-size: 20px;
-    background: #FCF0F0;
-    width: 100%;
-    height: 78px;
-    justify-content: center;
-    opacity: 0.6;
-    flex-direction: column;
-    color: black;
-    position: absolute;
-    bottom: 0;
-}
-
-.profession_Ver {
-    display: flex;
-    font-size: 20px;
-    background: #FCF0F0;
-    width: 100%;
-    height: 78px;
-    justify-content: center;
-    opacity: 0.6;
-    flex-direction: column;
-    color: black;
-}
-
-.master.b {
-    background: #F77474;
-    flex-grow: 1;
-}
-
-.master.c {
-    background: #9B51E0;
-    flex-grow: 1;
-}
-
-.photo_master {
-    display: flex;
-    background: url(../images/photos/gGOwnkKfxKU.jpg) no-repeat center top / cover;
-    height: 58%;
-    justify-content: center;
 }
 
 .container_school {
@@ -418,10 +363,15 @@ a.button8:active {
 }
 
 .photo.school {
-    background: url(../images/photos/images.jpg) no-repeat center top / cover;
+    background: url(../images/photos/school.jpg) no-repeat center top / cover;
     width: 100%;
     display: flex;
     height: 840px;
+    opacity: 0.4;
+}
+
+.school_opas {
+    background: rgb(56, 55, 55);
 }
 
 .content_top.school {
@@ -459,6 +409,7 @@ a.button8:active {
     flex-direction: column;
     padding: 50px;
     height: 50%;
+    align-items:  center;
 }
 
 .container_map {
@@ -530,45 +481,67 @@ a.button8:active {
     text-indent: 50px;
     opacity: 0.6;
     margin: auto;
+    justify-content: space-between;
 }
 
 .text_center.footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 24px;
+    margin: 40px;
 }
 
 .footer.right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 24px;
+    margin: 50px;
 }
 
 span.color_makeup {
     font-size: 64px;
-    color:  #F77474;
+    color: #F77474;
     letter-spacing: -0.03em;
+    /* font-weight: 300; */
+    /* text-align:  center; */
 }
 
 span.laboratory {
-    letter-spacing:  0.04em;
     font-size: 48px;
-    color:  black;
+    color: black;
+    /* font-weight: bold; */
 }
 
 span.training {
-    font-size:  48px;
+    font-size: 48px;
     letter-spacing: 0.04em;
     color: black;
-    font-weight:  bold;
-    margin-top: 50px;
+    /* font-weight: bold; */
+    margin-top: 126px;
     /* margin-right: 25px; */
+    text-align: center;
 }
 
 .laboratory {
-    font-size:  48px;
-    letter-spacing:  0.04em;
-    color:  black;
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    color: black;
+    font-weight: initial;
+    text-align: center;
 }
+
+.service_holden.rev {
+    flex-direction: column-reverse;
+}
+
+.service_ps {}
+
+span.phone_header {}
+
+.nav_header_phone {
+    text-decoration: underline;
+}
+
+.nav_header_phone {}
