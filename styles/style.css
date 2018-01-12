@@ -6,6 +6,7 @@ body {
     margin: 0px auto;
     max-width: 1920px;
     justify-content: center;
+    font-family: 'Arsenal', sans-serif;
 }
 
 .container {
@@ -49,6 +50,7 @@ hr {
     margin-left: 50px;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .title_text {
@@ -80,6 +82,7 @@ hr {
     display: flex;
     color: #F57373;
     text-transform: uppercase;
+    /* margin-left: 15px; */
 }
 
 .star {
@@ -117,7 +120,8 @@ a.button7 {
     border-radius: 3px;
     transition: 0.2s;
     padding: 20px;
-    margin: 30px;
+    margin: 40px;
+    font-size: 22px;
 }
 
 a.button7:hover {
@@ -157,7 +161,8 @@ nav_header_address {
     width: 100%;
     /* justify-content: center; */
     /* overflow: hidden; */
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
+    overflow-x: scroll;
 }
 
 .list_services1 {
@@ -173,13 +178,13 @@ nav_header_address {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    flex-basis:  33%;
+    flex-basis: 33%;
 }
 
 .logo_services {
     background: url("../images/photos/ghost.png") no-repeat center top / cover;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 30px;
     margin-top: 10px;
 }
 
@@ -204,6 +209,10 @@ nav_header_address {
 }
 
 .photo_service_h.brow {
+    background: url("../images/photos/bro.jpg") no-repeat center top / cover;
+}
+
+.photo_service catalog {
     background: url("../images/photos/bro.jpg") no-repeat center top / cover;
 }
 
@@ -308,7 +317,7 @@ a.button8 {
     border: 2px solid;
     border-radius: 3px;
     transition: 0.2s;
-    padding: 7px;
+    padding: 13px;
     margin: 20px;
 }
 
@@ -362,7 +371,7 @@ a.button8:active {
 
 .top_text_studio {
     display: flex;
-    margin-left: px;
+    /* margin-right: 100px; */
     justify-content: center;
     text-align: center;
     font-size: 36px;
@@ -473,7 +482,7 @@ a.button8:active {
 .description_master {
     display: flex;
     font-size: 25px;
-    color: black;
+    color: white;
     margin-top: 8px;
 }
 
@@ -482,7 +491,7 @@ a.button8:active {
     flex-direction: row;
     background: #3D3C3C;
     color: #FCFAFA;
-    height: 340px;
+    height: 258px;
     justify-content: space-between;
 }
 
@@ -554,12 +563,51 @@ span.training {
     text-shadow: 1px 1px 2px black, 0 0 4em white;
 }
 
+.phone a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
 .service_holden.rev {
     flex-direction: column-reverse;
 }
 
+.footer_icon {
+    width: 20px;
+    height: 20px;
+    background: url(../images/icons/hair.png) no-repeat center top / cover;
+}
 
-.phone a {
-    text-decoration:  none;
-    color:  white;
+.footer_icon.br {
+    background: url(../images/icons/brovicon.png) no-repeat center top / cover;
+}
+
+.footer_icon.make {
+    background: url(../images/icons/make.png) no-repeat center top / cover;
+}
+
+.footer_icon.school {
+    background: url(../images/icons/school.png) no-repeat center top / cover;
+}
+
+.footer_icon.catalog {
+    background: url(../images/icons/149743.png) no-repeat center top / cover;
+}
+
+.footer_icon.address {
+    background: url(../images/icons/address.png) no-repeat center top / cover;
+}
+
+.footer_icon.time {
+    background: url(../images/icons/time.png) no-repeat center top / cover;
+}
+
+.footer_icon.tel {
+    background: url(../images/icons/tel.png) no-repeat center top / cover;
+}
+
+.footer_icon.tel.school {
+    width: 25px;
+    height: 30px;
 }
