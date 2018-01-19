@@ -5,71 +5,89 @@
     <meta charset="utf-8" />
     <link href="styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
-    <title>мой сайт</title>
+    <!--добавил шрифт-->
+    <link rel="stylesheet" href="styles/animate.css">
+    <!--Подключаю css анимацию-->
+    <title>PIN-UP STUDIO</title>
 
 </head>
 
 <body>
-    <!--правый блок с бургером и соцсетями
-    <div class="menu_header">
-
-        <div class="menu_burger">
-            <a href="#" class="button">
-                <span class="menu">
-                          <b>menu</b>
-                        </span>
-            </a>
-
-            <ul class="sub-menu">
-                <li>услуги</li>
-                <li>о нас</li>
-                <li>контакты</li>
-                <li>где мы</li>
-                <li>каталог</li>
-                <li>главная</li>
-            </ul>
-
-        </div>
-
-        <div class=" component_socials ">
-            <a href=" "><img src=" "></a>
-            <a href=" "><img src=" "></a>
-            <a href=" "><img src=" "></a>
-        </div>
-
-    </div>-->
 
     <div class="container">
 
 
 
-        <div class="container_header">
-            <!-- <img src="images/photos/log.1.jpg" alt="студия красоты" class="logo">-->
-            <div class="menu_header">
+        <div id="head" class="container_header">
+            <!--главный конт...-->
 
-                <!-- <div class="menu_burger">
-                    <a href="#" class="button">
-                        <span class="menu">
-                                          <b>menu</b>
-                                        </span>
-                    </a>
+            <div class="menu_header">
+                <!--блок с бургером и соцсетями справа-->
+
+                <div id="nav" class="menu_burger">
+                    <div class="menu_hamb">
+                        <button class="hamburger">&#9776;</button>
+                        <button class="cross">&#735;</button>
+                    </div>
 
                     <ul class="sub-menu">
-                        <li>услуги</li>
-                        <li>о нас</li>
-                        <li>контакты</li>
-                        <li>где мы</li>
-                        <li>каталог</li>
-                        <li>главная</li>
-                    </ul>
 
+                        <li class="nav_item">
+                            <a href="#services">
+                                <div class="nav-burger">
+                                    <div class="icon_nav"></div>
+                                    <div class="text_nav">услуги</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#our_studio">
+                                <div class="nav-burger">
+                                    <div class="icon_nav our"></div>
+                                    <div class="text_nav">о нас</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contact">
+                                <div class="nav-burger">
+                                    <div class="icon_nav contact"></div>
+                                    <div class="text_nav">контакты</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#school">
+                                <div class="nav-burger">
+                                    <div class="icon_nav school"></div>
+                                    <div class="text_nav">обучение</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#map">
+                                <div class="nav-burger">
+                                    <div class="icon_nav map"></div>
+                                    <div class="text_nav">где мы</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#head">
+                                <div class="nav-burger">
+                                    <div class="icon_nav head"></div>
+                                    <div class="text_nav">главная</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class=" component_socials ">
                     <a href=" "><img src=" "></a>
                     <a href=" "><img src=" "></a>
                     <a href=" "><img src=" "></a>
-                </div>-->
+                </div>
 
             </div>
             <div class="logo"></div>
@@ -81,7 +99,7 @@
                     <div class="title_text">
                         Добро пожаловать в профессиональную
                     </div>
-                    <div class="pus">
+                    <div class="pus animated flip">
                         <span class="pinup">PinUp</span>
                         <span class="studio">studio</span>
                     </div>
@@ -122,7 +140,8 @@
         </div>
 
 
-        <div class="container_services">
+        <div id="services" class="container_services">
+            <!-- конт... с улугами-->
 
             <div class="list_services1">
                 <div class="service_holden">
@@ -300,6 +319,7 @@
             </div>
 
             <div class="list_services1">
+                <!--второй блок услуг-->
                 <div class="service_holden">
 
                     <div class="hair_services">
@@ -474,10 +494,11 @@
 
             </div>
         </div>
-        <!-- вторая часть услуг -->
 
 
-        <div class="container_our studio">
+
+        <div id="our_studio" class="container_our studio">
+            <!--конт... о нас-->
             <div class="text_studio ">
 
                 <div class="top_text_studio">
@@ -503,7 +524,8 @@
 
         </div>
 
-        <div class="container_services">
+        <div id="contact" class="container_services">
+            <!--конт... с мастерами-->
             <div class="list_services1">
                 <div class="service_holden">
 
@@ -602,8 +624,9 @@
                 </div>
 
             </div>
-            <!-- вторая часть мастеров-->
+
             <div class="list_services1">
+                <!-- вторая часть мастеров-->
                 <div class="service_holden">
 
                     <div class="hair_services_h">
@@ -706,7 +729,8 @@
         </div>
 
 
-        <div class="container_school">
+        <div id="school" class="container_school">
+            <!--конт... обучение-->
             <div class="photo school">
                 <div class="school_opas">
                 </div>
@@ -715,14 +739,14 @@
             <div class="content_top school">
 
                 <div class="top_text school">
-                    <span class="training">ОБУЧЕНИЕ</span>
+                    <span class="training animated infinite bounce">ОБУЧЕНИЕ</span>
                     <div class="proma">
-                        <span class="laboratory">У НАС В </span>
+
                         <span class="color_makeup"> PIN UP</span>
                     </div>
-                    <hr>
+
                     <div class="laboratory">STUDIO</div>
-                    <hr>
+
                 </div>
 
 
@@ -752,15 +776,17 @@
         </div>
 
 
-        <div class="container_map">
+        <div id="map" class="container_map">
+            <!--конт... где мы-->
 
             <div class="picture map ">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1225.7545930023227!2d23.675379871930314!3d52.088664082265964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210beb651e6f2d%3A0xcc2435c055ba0443!2z0YPQuy4g0JPQvtCz0L7Qu9GPIDHQkywg0JHRgNC10YHRgg!5e0!3m2!1sru!2sby!4v1515190570798"
                     width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <!--подгрузили карту-->
             </div>
 
             <div class="picture">
-                <div class="text map ">
+                <div class="text map">
                     <div class="description_master">
                         вход со двора
                     </div>
@@ -770,6 +796,7 @@
 
 
         <div class="container_footer">
+            <!-- конт...подвала-->
 
             <div class="footer left">
 
@@ -842,6 +869,7 @@
 
 
 </body>
-<script src="js/scripts.js"></script>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="scripts/scripts.js"></script>
 
 </html>
