@@ -1,11 +1,8 @@
 function getTargetTop(elem) {
 
-    //gets the id of the section header
-    //from the navigation's href e.g. ("#html")
+
     var id = elem.attr('href');
 
-    //Gets the distance from the top and 
-    //subtracts the height of the nav.
 
     if ($(id).offset()) {
         return $(id).offset().top - 10;
@@ -14,19 +11,17 @@ function getTargetTop(elem) {
 
 }
 
-//Smooth scroll when user click link that starts with #
+
 $('#nav a[href^="#"]').click(function(event) {
 
-    //gets the distance from the top of the 
-    //section refenced in the href.
+
     var target = getTargetTop($(this));
-    //scrolls to that section.
 
     $('html, body').animate({
         scrollTop: target
     }, 700);
 
-    //prevent the browser from jumping down to section.
+
     event.preventDefault();
 
 });
@@ -34,34 +29,45 @@ $('#nav a[href^="#"]').click(function(event) {
 
 function getTargetLeft(elem) {
 
-    //gets the id of the section header
-    //from the navigation's href e.g. ("#html")
+
     var id = elem.attr('href');
 
-    //Gets the distance from the top and 
-    //subtracts the height of the nav.
-    console.log($(id))
-    if ($(id).offset()) {
-        return $(id).innerWidth();
+    if ($(id).position()) {
+        return $(id).position().left;
     }
     return 0
 
 }
 
-//Smooth scroll when user click link that starts with #
-$('.scroll a[href^="#"]').click(function(event) {
 
-    //gets the distance from the top of the 
-    //section refenced in the href.
+$('.scroll.services a[href^="#"]').click(function(event) {
+
+
     var target = getTargetLeft($(this));
-    //scrolls to that section.
+
     console.log(target)
 
     $('#services').animate({
         scrollLeft: target
     }, 700);
 
-    //prevent the browser from jumping down to section.
+
+    event.preventDefault();
+
+});
+
+$('.scroll.contact a[href^="#"]').click(function(event) {
+
+
+    var target = getTargetLeft($(this));
+
+    console.log(target)
+
+    $('#contact').animate({
+        scrollLeft: target
+    }, 700);
+
+
     event.preventDefault();
 
 });
@@ -84,4 +90,17 @@ $(document).ready(function() {
         });
     });
 
+    $(".btn_header a").click(function() {
+        $(".great_massage").slideToggle("slow", function() {}).css('display', 'flex');
+    });
+    $(".great_massage").click(function() {
+        $(".great_massage").hide();
+    });
+})
+
+$(".btn_service a").click(function() {
+    $(".bag_hair").slideToggle("slow", function() {}).css('display', 'flex');
+});
+$(".bag_hair").click(function() {
+    $(".bag_hair").hide();
 });

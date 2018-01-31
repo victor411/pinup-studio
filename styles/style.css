@@ -18,26 +18,27 @@ body {
     background: rgb(65, 63, 63);
 }
 
+.great_massage {
+    display: flex;
+    /* opacity: 0.5; */
+    width: 100%;
+    height: 100vh;
+    background: url(../images/photos/massage1.jpg) no-repeat center top / cover;
+    align-content: center;
+    position: fixed;
+    z-index: 40;
+    display: none;
+}
 
-/* .great_massage {
-        display: flex;
-        opacity: 0.5;
-        width: 100%;
-        height: 100vh;
-        background: url(../images/photos/massage1.jpg) no-repeat center top / cover;
-        align-content: center;
-    }
-    
-    .text_great_massage {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 85px;
-        color: #fbfbfb;
-       
-    
+.text_great_massage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 85px;
+    color: #fbfbfb;
     font-size: 20px;
-} */
+    background: #00000070;
+}
 
 hr {
     width: 75%;
@@ -49,7 +50,7 @@ hr {
     /* background: black; */
     position: fixed;
     right: 0px;
-    height: 100%;
+    /* height: 100%; */
     opacity: 0.9;
     width: 155px;
     border-left: -2px;
@@ -60,10 +61,11 @@ hr {
     display: flex;
     width: 100%;
     height: 50px;
-    background: rgb(13, 15, 19);
+    background: rgb(204, 200, 200);
     justify-content: center;
-    color: white;
+    color: #0e0e0e;
     align-items: center;
+    font-size: 19px;
 }
 
 .menu_hamb {
@@ -119,8 +121,8 @@ hr {
 
 .nav_item {
     display: block;
-    padding: 2px 0 2px 0;
-    border-bottom: #5a4f4f 1px solid;
+    padding: 0;
+    border-bottom: #5a4f4f 2px solid;
 }
 
 .nav_item:hover {
@@ -164,9 +166,14 @@ hr {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    height: 65%;
+    /* height: 65%; */
     /* padding: 10px; */
     margin: 11px;
+    /* position: fixed; */
+    position: fixed;
+    right: 0;
+    bottom: 74px;
+    z-index: 40;
 }
 
 .social_icon {
@@ -321,6 +328,7 @@ nav_header_address {
     height: 50px;
     width: 50px;
     position: absolute;
+    z-index: 91;
 }
 
 .scroll_cross {
@@ -396,6 +404,7 @@ nav_header_address {
     flex-grow: 1;
     align-items: center;
     flex-basis: 50%;
+    min-width: 223px;
 }
 
 .hair_services_h {
@@ -526,7 +535,7 @@ a.button8:active {
 
 .photo_studio {
     display: flex;
-    /* width: 50%; */
+    width: 50%;
     flex-grow: 1;
     align-items: center;
 }
@@ -581,8 +590,8 @@ a.button8:active {
 
 .school.ft {
     display: flex;
-    /* flex-direction: row; */
-    /* align-items: center; */
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     margin-top: 25px;
 }
@@ -639,7 +648,7 @@ a.button8:active {
 
 .phone {
     display: flex;
-    margin-left: 97px;
+    margin-left: 4px;
     margin-right: auto;
 }
 
@@ -681,7 +690,7 @@ a.button8:active {
 
 .description_master {
     display: flex;
-    font-size: 20px;
+    font-size: 22px;
     color: white;
     margin-top: 9px;
     margin: 5px;
@@ -752,7 +761,7 @@ span.training {
     font-size: 40px;
     letter-spacing: 0.04em;
     color: white;
-    /* margin-top: 126px; */
+    margin-top: 50px;
     text-align: center;
     text-shadow: 1px 1px 2px black, 0 0 1em;
 }
@@ -770,7 +779,7 @@ span.training {
     text-decoration: none;
     color: white;
     display: flex;
-    margin-left: 1px;
+    margin-left: 11px;
 }
 
 .service_holden.rev {
@@ -824,7 +833,51 @@ span.training {
 div#nav {
     display: flex;
     flex-direction: column;
-    /* background: black; */
+}
+
+.bag_hair {
+    /* стилизация блоков для сервисов которые отоброжаются при нажатии на кнопку */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    position: fixed;
+    z-index: 40;
+    display: none;
+    background: url(../images/photos/hairbagimg.jpg) no-repeat center top / cover;
+}
+
+.bag_hair.a {
+    background: url(../images/photos/bagmakeimg.jpg) no-repeat center top / cover;
+}
+
+.bag_hair.b {
+    background: url(../images/photos/bagbrowimg.jpg) no-repeat center top / cover;
+}
+
+.bag_text {
+    width: 100%;
+    height: 100%;
+    background: #0000006b;
+}
+
+@media screen and (max-width: 1015px) {
+    .photo_studio {}
+    .container_our.studio {
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+        align-content: safe;
+    }
+    .text_studio {
+        width: 76%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .hair_services {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -852,6 +905,9 @@ div#nav {
         padding: 19px;
         margin: 22px;
     }
+    .hair_services {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -863,24 +919,48 @@ div#nav {
     }
     .footer.left {
         font-size: 18px;
+        margin-top: 39px;
     }
     .logo_services.footer {
         height: 98px;
         width: 98px;
         margin-left: 75px;
     }
+    .picture {
+        display: none;
+    }
+    .picture.map {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .hair_services {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 800px) {
+    div#slides {
+        flex-grow: 1;
+    }
+    .slidesjs-navigation {
+        display: none!important;
+    }
+    ul.slidesjs-pagination {
+        display: none;
+    }
     .title_text {
         font-size: 18px;
-    }
-    .container_header {
-        /* align-items: center; */
     }
     .menu_hamb {
         width: 50px;
         height: 50px;
+    }
+    .social_icon {
+        width: 35px;
+        height: 35px;
+        margin-top: 10px;
     }
     .pus {
         font-size: 68px;
@@ -933,7 +1013,7 @@ div#nav {
         font-size: 44px;
     }
     .content.school {
-        font-size: 20px;
+        font-size: 17px;
     }
     .content_top.school {
         width: 64%;
@@ -945,6 +1025,9 @@ div#nav {
     .photo.school {
         /* width: 106%; */
         height: 100vh;
+    }
+    .school.ft {
+        margin-top: 16px;
     }
     .footer.footer.left {
         font-size: 16px;
@@ -969,16 +1052,41 @@ div#nav {
     .container_footer {
         height: 255px;
     }
+    .photo_studio {
+        width: 75%;
+        display: flex;
+    }
 }
 
-div#slides {
-    flex-grow: 1;
+@media screen and (max-width: 750px) {
+    .list_services1 {
+        /* flex-direction: column; */
+        /* align-items:  stretch; */
+        /* flex-flow: row wrap; */
+    }
+    .hair_services {
+        /* width: 50%; */
+    }
+    .service_holden {
+        width: 50%;
+    }
+    .container_services {
+        justify-content: space-around;
+    }
 }
 
-.slidesjs-navigation {
-    display: none!important;
+@media screen and (max-width: 700px) {
+    .price_service {
+        font-size: 17px;
+    }
+    .container_services {
+        flex-wrap: wrap;
+    }
 }
 
-ul.slidesjs-pagination {
-    display: none;
+.scroll_left.right {
+    right: 0;
+    transform: rotate(180deg);
 }
+
+div#slides {}

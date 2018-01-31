@@ -22,7 +22,8 @@
 <body>
 
     <div class="container">
-        <!-- <div id="gm" class="great_massage">
+
+        <div id="gm" class="great_massage">
 
             <div class="text_great_massage">
                 Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными
@@ -33,7 +34,7 @@
                 всю эту чепуху», – подумал он, но это было совершенно неосуществимо, он привык спать на правом боку, а в теперешнем своем
             </div>
 
-        </div> -->
+        </div>
 
         <div id="head" class="container_header">
             <!--главный конт...-->
@@ -162,9 +163,16 @@
             <!-- конт... с улугами-->
 
             <div id="list1" class="list_services1">
-                <div class="scroll">
-                    <a href="#list2">
+                <div class="scroll services">
+                    <a href="#list1">
                         <div class="scroll_left"></div>
+                    </a>
+                    <div class="scroll_cross"></div>
+                </div>
+
+                <div class="scroll services">
+                    <a href="#list2">
+                        <div class="scroll_left right"></div>
                     </a>
                     <div class="scroll_cross"></div>
                 </div>
@@ -216,7 +224,7 @@
                         <hr>
 
                         <div class="btn_service">
-                            <a href="#" class="button8">все услуги</a>
+                            <a href="#hair-b" class="button8">все услуги</a>
 
                         </div>
                     </div>
@@ -273,7 +281,7 @@
                         <hr>
 
                         <div class="btn_service">
-                            <a href="#" class="button8">все услуги</a>
+                            <a href="#makeup-b" class="button8">все услуги</a>
 
                         </div>
                     </div>
@@ -330,7 +338,7 @@
                         <hr>
 
                         <div class="btn_service">
-                            <a href="#" class="button8">все услуги</a>
+                            <a href="#brow-b" class="button8">все услуги</a>
 
                         </div>
                     </div>
@@ -554,7 +562,20 @@
 
         <div id="contact" class="container_services">
             <!--конт... с мастерами-->
-            <div class="list_services1">
+            <div class="scroll contact">
+                <a href="#list_left">
+                    <div class="scroll_left"></div>
+                </a>
+                <div class="scroll_cross"></div>
+            </div>
+
+            <div class="scroll contact">
+                <a href="#list_right">
+                    <div class="scroll_left right"></div>
+                </a>
+                <div class="scroll_cross"></div>
+            </div>
+            <div id="list_left" class="list_services1">
                 <div class="service_holden">
 
                     <div class="hair_services_h">
@@ -632,7 +653,7 @@
 
                         <div class="description_master">
 
-                            Специалист по окрашиванию,стрижке, свадебные и просто праздничные прически. Более десяти лет опыта в парикмахерском искусстве.
+                            Наш BROW-МАСТЕР,специализирующийся только в данном направлении и имеющий высокую квалификацию!
 
                         </div>
                         <div class=" component_socials_master ">
@@ -653,7 +674,7 @@
 
             </div>
 
-            <div class="list_services1">
+            <div id="list_right" class="list_services1">
                 <!-- вторая часть мастеров-->
                 <div class="service_holden">
 
@@ -875,7 +896,7 @@
             <div class="footer right">
                 <div class="address footer">
                     <div class="footer_icon address"></div>
-                    <span class="footer text">г.Брест ул.Гоголя 1г</span>
+                    <span class="footer text">г.Брест ул.Гоголя 1г (вход со двора)</span>
                 </div>
                 <div class="time footer">
                     <div class="footer_icon time"></div>
@@ -893,8 +914,25 @@
                 </div>
             </div>
         </div>
-    </div>
+        <!-- это блоки с контентом для сервисов которые отображаются при нажатии на кнопку -все услуги -->
+        <div id="hair-b" class="bag_hair">
+            <div class="bag_text"></div>
 
+            <div id="makeup-b" class="bag_hair a">
+                <div class="bag_text"></div>
+
+                <div id="brow-b" class="bag_hair b">
+                    <div class="bag_text"></div>
+
+                    <div class="bag_hair">
+                        <div class="bag_text"></div>
+
+                        <div class="bag_hair">
+                            <div class="bag_text"></div>
+                            <!-- конец блоков с описанием услуг -->
+
+                        </div>
+                    </div>
 
 
 </body>
