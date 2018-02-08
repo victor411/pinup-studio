@@ -1,1613 +1,1765 @@
- body {
-     display: flex;
-     color: white;
-     font-family: Arial, Helvetica, sans-serif;
-     padding: 0px;
-     margin: 0px auto;
-     max-width: 1920px;
-     justify-content: center;
-     font-family: 'Arsenal', sans-serif;
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
-}
-a.slidesjs-navigation, .slidesjs-pagination {
-    display: none!important;
-}
- .container {
-     display: flex;
-     height: max-content;
-     flex-direction: column;
-     max-width: 100%;
-     background: rgb(65, 63, 63);
-}
- .drop-down_hair {
-     display: flex;
-     display: none;
-     background: #f9c21d;
-     align-items: center;
-}
- .great_massage {
-     display: flex;
-    /* opacity: 0.5;
+                         body {
+                             display: flex;
+                             color: white;
+                             font-family: Arial, Helvetica, sans-serif;
+                             padding: 0px;
+                             margin: 0px auto;
+                             max-width: 1920px;
+                             justify-content: center;
+                             font-family: 'Arsenal', sans-serif;
+                             -webkit-font-smoothing: antialiased;
+                             -moz-osx-font-smoothing: grayscale;
+                         }
+                         
+                         a.slidesjs-navigation,
+                         .slidesjs-pagination {
+                             display: none!important;
+                         }
+                         
+                         .container {
+                             display: flex;
+                             height: max-content;
+                             flex-direction: column;
+                             max-width: 100%;
+                             background: rgb(65, 63, 63);
+                         }
+                         
+                         .drop-down_hair {
+                             display: flex;
+                             display: none;
+                             background: #f9c21d;
+                             align-items: center;
+                         }
+                         
+                         .great_massage {
+                             display: flex;
+                             /* opacity: 0.5;
      */
-     width: 100%;
-     height: 100vh;
-     background: url(../images/photos/massage1.jpg) no-repeat center top / cover;
-     align-content: center;
-     position: fixed;
-     z-index: 40;
-     display: none;
-}
- .text_great_massage {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding: 85px;
-     color: #fbfbfb;
-     font-size: 20px;
-     background: #00000070;
-}
- hr {
-     width: 75%;
-     margin: 0px;
-     border-top: 0px;
-}
- .menu_header {
-    /* background: black;
+                             width: 100%;
+                             height: 100vh;
+                             background: url(../images/photos/massage1.jpg) no-repeat center top / cover;
+                             align-content: center;
+                             position: fixed;
+                             z-index: 40;
+                             display: none;
+                         }
+                         
+                         .text_great_massage {
+                             display: flex;
+                             justify-content: center;
+                             align-items: center;
+                             padding: 85px;
+                             color: #fbfbfb;
+                             font-size: 20px;
+                             background: #00000070;
+                         }
+                         
+                         hr {
+                             width: 75%;
+                             margin: 0px;
+                             border-top: 0px;
+                         }
+                         
+                         .menu_header {
+                             /* background: black;
      */
-     position: fixed;
-     right: 0px;
-    /* height: 100%;
+                             position: fixed;
+                             right: 0px;
+                             /* height: 100%;
      */
-     opacity: 0.9;
-     width: 155px;
-     border-left: -2px;
-     z-index: 80;
-}
- .nav-burger {
-     display: flex;
-     width: 100%;
-     height: 50px;
-     background: rgb(204, 200, 200);
-     justify-content: center;
-     color: #0e0e0e;
-     align-items: center;
-     font-size: 19px;
-}
- .menu_hamb {
-     display: flex;
-     width: 60px;
-     height: 60px;
-     opacity: 0.7;
-     background: rgb(14, 14, 14);
-     justify-content: center;
-     align-self: flex-end;
-}
- .hamburger {
-     background: none;
-    /* position: absolute;
+                             opacity: 0.9;
+                             width: 155px;
+                             border-left: -2px;
+                             z-index: 80;
+                         }
+                         
+                         .nav-burger {
+                             display: flex;
+                             width: 100%;
+                             height: 50px;
+                             background: rgb(204, 200, 200);
+                             justify-content: center;
+                             color: #0e0e0e;
+                             align-items: center;
+                             font-size: 19px;
+                         }
+                         
+                         .menu_hamb {
+                             display: flex;
+                             width: 60px;
+                             height: 60px;
+                             opacity: 0.7;
+                             background: rgb(14, 14, 14);
+                             justify-content: center;
+                             align-self: flex-end;
+                         }
+                         
+                         .hamburger {
+                             background: none;
+                             /* position: absolute;
      */
-    /* top: 0;
+                             /* top: 0;
      */
-    /* right: 0;
+                             /* right: 0;
      */
-     line-height: 40px;
-     color: #efeeee;
-     border: 0;
-     font-size: 1.9em;
-     font-weight: bold;
-     cursor: pointer;
-     outline: none;
-     z-index: 10000000000000;
-}
- .cross {
-     background: none;
-     position: absolute;
-     top: 0px;
-     right: 0;
-     padding: 7px 15px 0px 15px;
-     color: #999;
-     border: 0;
-     font-size: 3em;
-     line-height: 65px;
-     font-weight: bold;
-     cursor: pointer;
-     outline: none;
-     z-index: 10000000000000;
-}
- .sub-menu {
-    /* display: none;
+                             line-height: 40px;
+                             color: #efeeee;
+                             border: 0;
+                             font-size: 1.9em;
+                             font-weight: bold;
+                             cursor: pointer;
+                             outline: none;
+                             z-index: 10000000000000;
+                         }
+                         
+                         .cross {
+                             background: none;
+                             position: absolute;
+                             top: 0px;
+                             right: 0;
+                             padding: 7px 15px 0px 15px;
+                             color: #999;
+                             border: 0;
+                             font-size: 3em;
+                             line-height: 65px;
+                             font-weight: bold;
+                             cursor: pointer;
+                             outline: none;
+                             z-index: 10000000000000;
+                         }
+                         
+                         .sub-menu {
+                             /* display: none;
      */
-     margin: 0;
-     padding: 0;
-     list-style-type: none;
-     list-style-image: none;
-    /* background: black;
+                             margin: 0;
+                             padding: 0;
+                             list-style-type: none;
+                             list-style-image: none;
+                             /* background: black;
      */
-    /* height: calc(100vh - 60px);
+                             /* height: calc(100vh - 60px);
      */
-}
- .nav_item {
-     display: block;
-     padding: 0;
-     border-bottom: #5a4f4f 2px solid;
-}
- .nav_item:hover {
-     background: #000000;
-}
- .sub-menu nav_item a {
-     text-decoration: none;
-     margin: 0px;
-     color: #666;
-}
- .sub-menu nav_item a:hover {
-     color: #666;
-     text-decoration: none;
-}
- .nav_item a {
-     color: #666;
-     text-decoration: none;
-}
- .nav_item a:hover {
-     color: #666;
-     text-decoration: none;
-}
- .glyphicon-home {
-     color: white;
-     font-size: 1.5em;
-     margin-top: 5px;
-     margin: 0 auto;
-}
- .icon_nav {
-     background: url(../images/icons/school.png) no-repeat center top / cover;
-}
- .component_socials {
-     display: flex;
-     flex-direction: column;
-     align-items: flex-end;
-     justify-content: flex-end;
-    /* height: 65%;
+                         }
+                         
+                         .nav_item {
+                             display: block;
+                             padding: 0;
+                             border-bottom: #5a4f4f 2px solid;
+                         }
+                         
+                         .nav_item:hover {
+                             background: #000000;
+                         }
+                         
+                         .sub-menu nav_item a {
+                             text-decoration: none;
+                             margin: 0px;
+                             color: #666;
+                         }
+                         
+                         .sub-menu nav_item a:hover {
+                             color: #666;
+                             text-decoration: none;
+                         }
+                         
+                         .nav_item a {
+                             color: #666;
+                             text-decoration: none;
+                         }
+                         
+                         .nav_item a:hover {
+                             color: #666;
+                             text-decoration: none;
+                         }
+                         
+                         .glyphicon-home {
+                             color: white;
+                             font-size: 1.5em;
+                             margin-top: 5px;
+                             margin: 0 auto;
+                         }
+                         
+                         .icon_nav {
+                             background: url(../images/icons/school.png) no-repeat center top / cover;
+                         }
+                         
+                         .component_socials {
+                             display: flex;
+                             flex-direction: column;
+                             align-items: flex-end;
+                             justify-content: flex-end;
+                             height: 65%;
+                             padding: 10px;
+                             margin: 11px;
+                             /* position: fixed;
      */
-    /* padding: 10px;
+                             position: fixed;
+                             right: 0;
+                             bottom: 74px;
+                             z-index: 40;
+                         }
+                         
+                         .social_icon {
+                             width: 40px;
+                             height: 40px;
+                             margin-top: 20px;
+                         }
+                         
+                         .container_header {
+                             display: flex;
+                             text-align: center;
+                             align-items: stretch;
+                             background: url(../images/photos/veb.head.jpg) no-repeat center top / cover;
+                             height: 100vh;
+                             justify-content: space-between;
+                             flex-direction: column;
+                         }
+                         
+                         .center__text_left {
+                             display: flex;
+                             width: 65%;
+                             margin-left: 50px;
+                             flex-direction: column;
+                             justify-content: center;
+                             align-items: center;
+                         }
+                         
+                         .title_text {
+                             font-size: 24px;
+                             text-transform: uppercase;
+                             margin-top: 10px;
+                         }
+                         
+                         .logo {
+                             display: flex;
+                             width: 90px;
+                             height: auto;
+                             float: left;
+                             margin-top: 20px;
+                             margin-left: 20px;
+                             align-self: flex-start;
+                             /* background: url("../images/photos/logohipster.png") no-repeat center top / cover;
      */
-     margin: 11px;
-    /* position: fixed;
+                         }
+                         
+                         .pus {
+                             display: flex;
+                             font-size: 80px;
+                             text-transform: uppercase;
+                             z-index: 1;
+                             justify-content: center;
+                             margin-top: 12px;
+                         }
+                         
+                         .studio {
+                             display: flex;
+                             color: #F57373;
+                             text-transform: uppercase;
+                             /* margin-left: 15px;
      */
-     position: fixed;
-     right: 0;
-     bottom: 74px;
-     z-index: 40;
-}
- .social_icon {
-     width: 40px;
-     height: 40px;
-     margin-top: 20px;
-}
- .container_header {
-     display: flex;
-     text-align: center;
-     align-items: stretch;
-     background: url(../images/photos/veb.head.jpg) no-repeat center top / cover;
-     height: 100vh;
-     justify-content: space-between;
-     flex-direction: column;
-}
- .center__text_left {
-     display: flex;
-     width: 65%;
-     margin-left: 50px;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-}
- .title_text {
-     font-size: 24px;
-     text-transform: uppercase;
-     margin-top: 10px;
-}
- .logo {
-     display: flex;
-     width: 90px;
-     height: auto;
-     float: left;
-     margin-top: 20px;
-     margin-left: 20px;
-     align-self: flex-start;
-    /* background: url("../images/photos/logohipster.png") no-repeat center top / cover;
+                         }
+                         
+                         .star {
+                             display: flex;
+                             justify-content: center;
+                             margin-top: 15px;
+                             text-shadow: 0 0 5px white;
+                         }
+                         
+                         .center__text {
+                             display: flex;
+                             justify-content: space-between;
+                             font-size: 36px;
+                             text-transform: uppercase;
+                         }
+                         
+                         .content_header {
+                             display: flex;
+                             margin: 0 auto 20px;
+                             font-size: 36px;
+                             text-transform: uppercase;
+                             justify-content: space-around;
+                             margin-top: 20px;
+                         }
+                         
+                         a.button7 {
+                             display: inline-block;
+                             color: white;
+                             font-weight: 700;
+                             text-decoration: none;
+                             user-select: none;
+                             padding: .5em 2em;
+                             outline: none;
+                             border: 2px solid;
+                             border-radius: 3px;
+                             transition: 0.2s;
+                             padding: 19px;
+                             margin: 40px;
+                             font-size: 22px;
+                         }
+                         
+                         a.button7:hover {
+                             background: #F77474;
+                         }
+                         
+                         a.button7:active {
+                             background: white;
+                         }
+                         
+                         .nav_header_footer {
+                             display: flex;
+                             height: 69px;
+                             width: 100%;
+                             background: black;
+                             /* opacity: 0.8;
      */
-}
- .pus {
-     display: flex;
-     font-size: 80px;
-     text-transform: uppercase;
-     z-index: 1;
-     justify-content: center;
-     margin-top: 12px;
-}
- .studio {
-     display: flex;
-     color: #F57373;
-     text-transform: uppercase;
-    /* margin-left: 15px;
+                             display: flex;
+                             align-items: center;
+                             align-self: flex-end;
+                             justify-content: space-around;
+                         }
+                         
+                         .nav_header_phone a {
+                             font-size: 24px;
+                             text-decoration: none;
+                             color: white;
+                         }
+                         
+                         nav_header_address {
+                             width: 245px;
+                         }
+                         
+                         .container_services {
+                             display: flex;
+                             /* flex-wrap: wrap;
      */
-}
- .star {
-     display: flex;
-     justify-content: center;
-     margin-top: 15px;
-     text-shadow: 0 0 5px white;
-}
- .center__text {
-     display: flex;
-     justify-content: space-between;
-     font-size: 36px;
-     text-transform: uppercase;
-}
- .content_header {
-     display: flex;
-     margin: 0 auto 20px;
-     font-size: 36px;
-     text-transform: uppercase;
-     justify-content: space-around;
-     margin-top: 20px;
-}
- a.button7 {
-     display: inline-block;
-     color: white;
-     font-weight: 700;
-     text-decoration: none;
-     user-select: none;
-     padding: .5em 2em;
-     outline: none;
-     border: 2px solid;
-     border-radius: 3px;
-     transition: 0.2s;
-     padding: 19px;
-     margin: 40px;
-     font-size: 22px;
-}
- a.button7:hover {
-     background: #F77474;
-}
- a.button7:active {
-     background: white;
-}
- .nav_header_footer {
-     display: flex;
-     height: 69px;
-     width: 100%;
-     background: black;
-    /* opacity: 0.8;
+                             color: white;
+                             width: 100%;
+                             /* height: 100vh;
      */
-     display: flex;
-     align-items: center;
-     align-self: flex-end;
-     justify-content: space-around;
-}
- .nav_header_phone a {
-     font-size: 24px;
-     text-decoration: none;
-     color: white;
-}
- nav_header_address {
-     width: 245px;
-}
- .container_services {
-     display: flex;
-    /* flex-wrap: wrap;
+                             /* justify-content: center;
      */
-     color: white;
-     width: 100%;
-    /* height: 100vh;
+                             /* overflow: hidden;
      */
-    /* justify-content: center;
+                             /* overflow-y: hidden;
      */
-    /* overflow: hidden;
+                             overflow-x: hidden;
+                         }
+                         
+                         .scroll {
+                             display: flex;
+                             align-items: center;
+                             opacity: 0.6;
+                             /* flex-direction: row;
      */
-    /* overflow-y: hidden;
+                             max-width: 100%;
+                         }
+                         
+                         .scroll_left {
+                             background: url("../images/icons/scroll.png") no-repeat center top / cover;
+                             height: 50px;
+                             width: 50px;
+                             position: absolute;
+                             z-index: 91;
+                         }
+                         
+                         .scroll_cross {
+                             display: none;
+                             background: url("../images/icons/cross.png") no-repeat center top / cover;
+                             height: 93px;
+                             width: 50px;
+                             position: absolute;
+                         }
+                         
+                         .list_services1 {
+                             display: flex;
+                             flex-basis: 100%;
+                             text-align: center;
+                             height: 100vh;
+                             flex-shrink: 0;
+                             /* flex-direction: column;
      */
-     overflow-x: hidden;
-}
- .scroll {
-     display: flex;
-     align-items: center;
-     opacity: 0.6;
-    /* flex-direction: row;
+                         }
+                         
+                         .service_holden {
+                             flex-direction: column;
+                             display: flex;
+                             align-items: center;
+                             flex-grow: 1;
+                             flex-basis: 33%;
+                         }
+                         
+                         .logo_services {
+                             background: url("../images/photos/logohip.png") no-repeat center top / cover;
+                             width: 45px;
+                             height: 45px;
+                             margin-top: 5px;
+                             flex-shrink: 0;
+                         }
+                         
+                         .photo_service {
+                             display: flex;
+                             flex-basis: 50%;
+                             background: url("../images/photos/images (1).jpg") no-repeat center top / cover;
+                             width: 100%;
+                             height: 100%;
+                         }
+                         
+                         .photo_service_h {
+                             display: flex;
+                             flex-basis: 50%;
+                             background: url("../images/photos/sasha.jpg") no-repeat center top / cover;
+                             width: 100%;
+                             height: 100%;
+                         }
+                         
+                         .photo_service_h.make {
+                             background: url("../images/photos/lora.jpg") no-repeat center top / cover;
+                         }
+                         
+                         .photo_service_h.brow {
+                             background: url("../images/photos/bro.jpg") no-repeat center top / cover;
+                         }
+                         
+                         .photo_service catalog {
+                             background: url("../images/photos/bro.jpg") no-repeat center top / cover;
+                         }
+                         
+                         .hair_services {
+                             display: flex;
+                             text-align: center;
+                             justify-content: center;
+                             flex-direction: column;
+                             font-size: 24px;
+                             background: #f9c21d;
+                             width: 100%;
+                             padding: 0;
+                             flex-grow: 1;
+                             align-items: center;
+                             flex-basis: 50%;
+                             min-width: 223px;
+                         }
+                         
+                         .hair_services_h {
+                             display: flex;
+                             text-align: center;
+                             justify-content: center;
+                             flex-direction: column;
+                             font-size: 24px;
+                             background: #BD8E00;
+                             width: 100%;
+                             padding: 0;
+                             flex-grow: 1;
+                             align-items: center;
+                             flex-basis: 50%;
+                         }
+                         
+                         .hair_services.make {
+                             background: #23BAEB;
+                         }
+                         
+                         .hair_services_h.make {
+                             background: #F77474;
+                         }
+                         
+                         .photo_service.make {
+                             background: url("../images/photos/makeup.jpg.jpg") no-repeat center top / cover;
+                         }
+                         
+                         .photo_service.brow {
+                             background: url("../images/photos/brow.jpg") no-repeat center top / cover;
+                         }
+                         
+                         .hair_services_h.brow {
+                             background: #9B51E0;
+                         }
+                         
+                         .hair_services.brow {
+                             background: #F77474;
+                         }
+                         
+                         .name_service {
+                             font-size: 25px;
+                             margin-bottom: 0px;
+                             text-align: center;
+                             text-overflow: ellipsis;
+                             width: 75%;
+                             text-transform: capitalize;
+                             margin-top: 5px;
+                             font-weight: 600;
+                         }
+                         
+                         .service_ps {
+                             display: flex;
+                             text-align: center;
+                             flex-direction: row;
+                             justify-content: space-between;
+                             align-items: center;
+                             width: 72%;
+                             padding: 10px 0 10px 0;
+                         }
+                         
+                         .service {
+                             display: flex;
+                             text-align: center;
+                             flex-direction: row;
+                             justify-content: center;
+                             font-weight: 100;
+                         }
+                         
+                         .price_service {
+                             display: flex;
+                             text-align: center;
+                             flex-direction: row;
+                             /* padding: 25px;
      */
-     max-width: 100%;
-}
- .scroll_left {
-     background: url("../images/icons/scroll.png") no-repeat center top / cover;
-     height: 50px;
-     width: 50px;
-     position: absolute;
-     z-index: 91;
-}
- .scroll_cross {
-     display: none;
-     background: url("../images/icons/cross.png") no-repeat center top / cover;
-     height: 93px;
-     width: 50px;
-     position: absolute;
-}
- .list_services1 {
-     display: flex;
-     flex-basis: 100%;
-     text-align: center;
-     height: 100vh;
-     flex-shrink: 0;
-    /* flex-direction: column;
+                             font-weight: 600;
+                             font-size: px;
+                         }
+                         
+                         a.button8 {
+                             display: inline-block;
+                             color: white;
+                             font-weight: 700;
+                             text-decoration: none;
+                             user-select: none;
+                             padding: .5em 2em;
+                             outline: none;
+                             border: 2px solid;
+                             border-radius: 3px;
+                             transition: 0.2s;
+                             padding: 10px;
+                             margin: 16px;
+                             font-size: 18px;
+                         }
+                         
+                         a.button8:hover {
+                             background: rgb(88, 88, 86);
+                         }
+                         
+                         a.button8:active {
+                             background: white;
+                         }
+                         
+                         .container_our.studio {
+                             display: flex;
+                             flex-direction: row;
+                             width: 100%;
+                             height: 100vh;
+                             background: rgb(34, 32, 32);
+                             font-size: 18px;
+                             color: white;
+                             padding: 20px;
+                             box-sizing: border-box;
+                             margin: 0px;
+                         }
+                         
+                         .stud {
+                             color: #F78181;
+                             margin-left: 15px;
+                         }
+                         
+                         .text_studio {
+                             display: flex;
+                             flex-direction: column;
+                             width: 50%;
+                             justify-content: center;
+                             /* line-height: 29px;
      */
-}
- .service_holden {
-     flex-direction: column;
-     display: flex;
-     align-items: center;
-     flex-grow: 1;
-     flex-basis: 33%;
-}
- .logo_services {
-     background: url("../images/photos/logohip.png") no-repeat center top / cover;
-     width: 45px;
-     height: 45px;
-     margin-top: 5px;
-     flex-shrink: 0;
-}
- .photo_service {
-     display: flex;
-     flex-basis: 50%;
-     background: url("../images/photos/images (1).jpg") no-repeat center top / cover;
-     width: 100%;
-     height: 100%;
-}
- .photo_service_h {
-     display: flex;
-     flex-basis: 50%;
-     background: url("../images/photos/sasha.jpg") no-repeat center top / cover;
-     width: 100%;
-     height: 100%;
-}
- .photo_service_h.make {
-     background: url("../images/photos/lora.jpg") no-repeat center top / cover;
-}
- .photo_service_h.brow {
-     background: url("../images/photos/bro.jpg") no-repeat center top / cover;
-}
- .photo_service catalog {
-     background: url("../images/photos/bro.jpg") no-repeat center top / cover;
-}
- .hair_services {
-     display: flex;
-     text-align: center;
-     justify-content: center;
-     flex-direction: column;
-     font-size: 24px;
-     background: #f9c21d;
-     width: 100%;
-     padding: 0;
-     flex-grow: 1;
-     align-items: center;
-     flex-basis: 50%;
-     min-width: 223px;
-}
- .hair_services_h {
-     display: flex;
-     text-align: center;
-     justify-content: center;
-     flex-direction: column;
-     font-size: 24px;
-     background: #BD8E00;
-     width: 100%;
-     padding: 0;
-     flex-grow: 1;
-     align-items: center;
-     flex-basis: 50%;
-}
- .hair_services.make {
-     background: #23BAEB;
-}
- .hair_services_h.make {
-     background: #F77474;
-}
- .photo_service.make {
-     background: url("../images/photos/makeup.jpg.jpg") no-repeat center top / cover;
-}
- .photo_service.brow {
-     background: url("../images/photos/brow.jpg") no-repeat center top / cover;
-}
- .hair_services_h.brow {
-     background: #9B51E0;
-}
- .hair_services.brow {
-     background: #F77474;
-}
- .name_service {
-     font-size: 25px;
-     margin-bottom: 0px;
-     text-align: center;
-     text-overflow: ellipsis;
-     width: 75%;
-     text-transform: capitalize;
-     margin-top: 5px;
-     font-weight: 600;
-}
- .service_ps {
-     display: flex;
-     text-align: center;
-     flex-direction: row;
-     justify-content: space-between;
-     align-items: center;
-     width: 72%;
-     padding: 10px 0 10px 0;
-}
- .service {
-     display: flex;
-     text-align: center;
-     flex-direction: row;
-     justify-content: center;
-     font-weight: 100;
-}
- .price_service {
-     display: flex;
-     text-align: center;
-     flex-direction: row;
-    /* padding: 25px;
+                             margin-left: 30px;
+                         }
+                         
+                         .photo_studio {
+                             display: flex;
+                             width: 50%;
+                             flex-grow: 1;
+                             align-items: center;
+                             /* height: 200px; */
+                         }
+                         
+                         .gallery_photo_studio {
+                             display: flex;
+                             /* height: 80%;
      */
-     font-weight: 600;
-     font-size: px;
-}
- a.button8 {
-     display: inline-block;
-     color: white;
-     font-weight: 700;
-     text-decoration: none;
-     user-select: none;
-     padding: .5em 2em;
-     outline: none;
-     border: 2px solid;
-     border-radius: 3px;
-     transition: 0.2s;
-     padding: 10px;
-     margin: 16px;
-     font-size: 18px;
-}
- a.button8:hover {
-     background: rgb(88, 88, 86);
-}
- a.button8:active {
-     background: white;
-}
- .container_our.studio {
-     display: flex;
-     flex-direction: row;
-     width: 100%;
-     height: 100vh;
-     background: rgb(34, 32, 32);
-     font-size: 18px;
-     color: white;
-     padding: 20px;
-     box-sizing: border-box;
-     margin: 0px;
-}
- .stud {
-     color: #F78181;
-     margin-left: 15px;
-}
- .text_studio {
-     display: flex;
-     flex-direction: column;
-     width: 50%;
-     justify-content: center;
-    /* line-height: 29px;
+                             /* width: 80%;
      */
-     margin-left: 30px;
-}
- .photo_studio {
-    display: flex;
-    width: 50%;
-    flex-grow: 1;
-    align-items: center;
-    /* height: 200px; */
-}
- .gallery_photo_studio {
-     display: flex;
-    /* height: 80%;
+                             background: url(../images/photos/119714.jpg) no-repeat center top / cover;
+                             width: 400px;
+                             height: 400px;
+                             margin: auto;
+                         }
+                         
+                         .top_text_studio {
+                             display: flex;
+                             justify-content: center;
+                             text-align: center;
+                             font-size: 36px;
+                             padding: 30px;
+                         }
+                         
+                         .container_masters {
+                             display: flex;
+                             color: white;
+                             max-width: 100%;
+                             justify-content: center;
+                             position: relative;
+                         }
+                         
+                         .container_school {
+                             display: flex;
+                             justify-content: center;
+                             flex-direction: row;
+                             width: 100%;
+                             background: black;
+                             height: 100vh;
+                         }
+                         
+                         .photo.school {
+                             background: url(../images/photos/school.jpg) no-repeat center top / cover;
+                             width: 100%;
+                             display: flex;
+                             /* height: 100vh;
      */
-    /* width: 80%;
+                             opacity: 0.4;
+                         }
+                         
+                         .social_school {
+                             height: 45px;
+                             width: 45px;
+                         }
+                         
+                         .school.ft {
+                             display: flex;
+                             flex-direction: row;
+                             align-items: center;
+                             width: 100%;
+                             margin-top: 25px;
+                         }
+                         
+                         .component_socials.school {
+                             display: flex;
+                             flex-direction: row;
+                             align-items: center;
+                             width: 100%;
+                             /* margin-bottom: 0px;
      */
-     background: url(../images/photos/119714.jpg) no-repeat center top / cover;
-     width: 400px;
-     height: 400px;
-     margin: auto;
-}
- .top_text_studio {
-     display: flex;
-     justify-content: center;
-     text-align: center;
-     font-size: 36px;
-     padding: 30px;
-}
- .container_masters {
-     display: flex;
-     color: white;
-     max-width: 100%;
-     justify-content: center;
-     position: relative;
-}
- .container_school {
-     display: flex;
-     justify-content: center;
-     flex-direction: row;
-     width: 100%;
-     background: black;
-     height: 100vh;
-}
- .photo.school {
-     background: url(../images/photos/school.jpg) no-repeat center top / cover;
-     width: 100%;
-     display: flex;
-    /* height: 100vh;
+                             margin-top: 45px;
+                         }
+                         
+                         .school_opas {
+                             background: rgb(56, 55, 55);
+                         }
+                         
+                         .content_top.school {
+                             display: flex;
+                             background: rgb(94, 91, 91);
+                             flex-direction: column;
+                             justify-content: space-between;
+                             width: 100%;
+                             /* text-align: center;
      */
-     opacity: 0.4;
-}
- .social_school {
-     height: 45px;
-     width: 45px;
-}
- .school.ft {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     width: 100%;
-     margin-top: 25px;
-}
- .component_socials.school {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     width: 100%;
-    /* margin-bottom: 0px;
+                         }
+                         
+                         .col_content.school {
+                             display: flex;
+                             background: rgb(60, 58, 58);
+                             font-size: 24px;
+                             height: 50%;
+                             width: 100%;
+                             justify-content: center;
+                         }
+                         
+                         .content.school {
+                             display: flex;
+                             width: 670px;
+                             margin: auto;
+                             flex-direction: column;
+                             padding: 40px;
+                             line-height: 1.3;
+                             /* bottom: 0;
      */
-     margin-top: 45px;
-}
- .school_opas {
-     background: rgb(56, 55, 55);
-}
- .content_top.school {
-     display: flex;
-     background: rgb(94, 91, 91);
-     flex-direction: column;
-     justify-content: space-between;
-     width: 100%;
-    /* text-align: center;
+                         }
+                         
+                         .top_text.school {
+                             display: flex;
+                             flex-direction: column;
+                             padding: 50px;
+                             /* height: 42%;
      */
-}
- .col_content.school {
-     display: flex;
-     background: rgb(60, 58, 58);
-     font-size: 24px;
-     height: 50%;
-     width: 100%;
-     justify-content: center;
-}
- .content.school {
-     display: flex;
-     width: 670px;
-     margin: auto;
-     flex-direction: column;
-     padding: 40px;
-     line-height: 1.3;
-    /* bottom: 0;
+                             align-items: center;
+                             text-transform: none;
+                         }
+                         
+                         .phone {
+                             display: flex;
+                             margin-left: 4px;
+                             /* margin-right: auto;
      */
-}
- .top_text.school {
-     display: flex;
-     flex-direction: column;
-     padding: 50px;
-    /* height: 42%;
+                         }
+                         
+                         .container_map {
+                             display: flex;
+                             align-content: stretch;
+                             width: 100%;
+                             background: url(../images/photos/kompas.jpg) no-repeat center top / cover;
+                             flex-flow: row wrap;
+                         }
+                         
+                         .picture.map {
+                             display: block;
+                             height: 425px;
+                             width: 60%;
+                             background: url(../images/photos/kompas.jpg) no-repeat center top / cover;
+                         }
+                         
+                         .text.map {
+                             display: flex;
+                             height: 50px;
+                             width: 100%;
+                             background: rgb(109, 106, 106);
+                             justify-content: center;
+                             position: absolute;
+                             bottom: 0;
+                             right: 0;
+                             opacity: 0.6;
+                         }
+                         
+                         .picture {
+                             display: flex;
+                             position: relative;
+                             width: 40%;
+                             height: 425px;
+                             background: url(../images/photos/gogol1g.jpg) no-repeat center top / cover;
+                             z-index: 0;
+                         }
+                         
+                         .description_master {
+                             display: flex;
+                             font-size: 22px;
+                             color: white;
+                             margin-top: 9px;
+                             margin: 5px;
+                             text-overflow: ellipsis;
+                             overflow: hidden;
+                         }
+                         
+                         .container_footer {
+                             display: flex;
+                             flex-direction: row;
+                             background: #3D3C3C;
+                             color: #FCFAFA;
+                             height: 258px;
+                             justify-content: space-between;
+                         }
+                         
+                         .footer.left {
+                             display: flex;
+                             flex-direction: column;
+                             justify-content: center;
+                             font-size: 21px;
+                             width: 359px;
+                             height: 264px;
+                             margin: auto;
+                             flex-grow: 1;
+                         }
+                         
+                         .logo_services.footer {
+                             display: block;
+                             /* padding: 50px;
      */
-     align-items: center;
-     text-transform: none;
-}
- .phone {
-     display: flex;
-     margin-left: 4px;
-    /* margin-right: auto;
+                             height: 105px;
+                             width: 105px;
+                             margin-left: 95px;
+                             margin-top: 5px;
+                         }
+                         
+                         .footer.text {
+                             /* text-indent: 22px;
      */
-}
- .container_map {
-     display: flex;
-     align-content: stretch;
-     width: 100%;
-     background: url(../images/photos/kompas.jpg) no-repeat center top / cover;
-     flex-flow: row wrap;
-}
- .picture.map {
-     display: block;
-     height: 425px;
-     width: 60%;
-     background: url(../images/photos/kompas.jpg) no-repeat center top / cover;
-}
- .text.map {
-     display: flex;
-     height: 50px;
-     width: 100%;
-     background: rgb(109, 106, 106);
-     justify-content: center;
-     position: absolute;
-     bottom: 0;
-     right: 0;
-     opacity: 0.6;
-}
- .picture {
-     display: flex;
-     position: relative;
-     width: 40%;
-     height: 425px;
-     background: url(../images/photos/gogol1g.jpg) no-repeat center top / cover;
-     z-index: 0;
-}
- .description_master {
-     display: flex;
-     font-size: 22px;
-     color: white;
-     margin-top: 9px;
-     margin: 5px;
-     text-overflow: ellipsis;
-     overflow: hidden;
-}
- .container_footer {
-     display: flex;
-     flex-direction: row;
-     background: #3D3C3C;
-     color: #FCFAFA;
-     height: 258px;
-     justify-content: space-between;
-}
- .footer.left {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     font-size: 21px;
-     width: 359px;
-     height: 264px;
-     margin: auto;
-     flex-grow: 1;
-}
- .logo_services.footer {
-     display: block;
-    /* padding: 50px;
+                             opacity: 0.6;
+                             /* margin: auto;
      */
-     height: 105px;
-     width: 105px;
-     margin-left: 95px;
-     margin-top: 5px;
-}
- .footer.text {
-    /* text-indent: 22px;
+                             /* justify-content: space-between;
      */
-     opacity: 0.6;
-    /* margin: auto;
+                             margin-left: 15px;
+                             /* align-items: center;
      */
-    /* justify-content: space-between;
-     */
-     margin-left: 15px;
-    /* align-items: center;
-     */
-}
- .text_center.footer {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
-     font-size: 18px;
-     margin: 24px;
-     flex-grow: 1;
-}
- .footer.right {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     font-size: 18px;
-     margin: 30px;
-     flex-grow: 1;
-}
- span.color_makeup {
-     font-size: 64px;
-     color: #F77474;
-     letter-spacing: -0.03em;
-     text-shadow: 1px 1px 2px black, 0 0 4em red;
-}
- span.training {
-     font-size: 40px;
-     letter-spacing: 0.04em;
-     color: white;
-     margin-top: 50px;
-     text-align: center;
-     text-shadow: 1px 1px 2px black, 0 0 1em;
-}
- .laboratory {
-     font-size: 48px;
-     letter-spacing: 0.04em;
-     color: white;
-     font-weight: initial;
-     text-align: center;
-     text-shadow: 1px 1px 2px black, 0 0 4em white;
-}
- .phone a {
-     text-decoration: none;
-     color: white;
-     display: flex;
-     margin-left: 11px;
-}
- .service_holden.rev {
-     flex-direction: column-reverse;
-}
- .footer_icon {
-     width: 20px;
-     height: 20px;
-     background: url(../images/icons/hair.png) no-repeat center top / cover;
-     flex-shrink: 0;
-}
- .footer_icon.br {
-     background: url(../images/icons/brovicon.png) no-repeat center top / cover;
-}
- .footer_icon.make {
-     background: url(../images/icons/make.png) no-repeat center top / cover;
-}
- .footer_icon.school {
-     background: url(../images/icons/school.png) no-repeat center top / cover;
-}
- .footer_icon.catalog {
-     background: url(../images/icons/149743.png) no-repeat center top / cover;
-}
- .footer_icon.address {
-     background: url(../images/icons/address.png) no-repeat center top / cover;
-}
- .footer_icon.time {
-     background: url(../images/icons/time.png) no-repeat center top / cover;
-}
- .footer_icon.tel {
-     background: url(../images/icons/tel.png) no-repeat center top / cover;
-}
- .footer_icon.tel.school {
-     width: 25px;
-     height: 30px;
-}
- .footer {
-     display: flex;
-}
- div#nav {
-     display: flex;
-     flex-direction: column;
-}
- .bag_hair {
-    /* стилизация блоков для сервисов которые отоброжаются при нажатии на кнопку */
-     height: 100%;
-     width: 100%;
-     display: flex;
-     align-content: center;
-     position: fixed;
-     justify-content: center;
-     z-index: 40;
-     display: none;
-     background: url(../images/photos/hairbagimg.jpg) no-repeat center top / cover;
-}
- .bag_hair.a {
-     background: url(../images/photos/bagmakeimg.jpg) no-repeat center top / cover;
-}
- .bag_hair.b {
-     background: url(../images/photos/bagbrowimg.jpg) no-repeat center top / cover;
-}
- .bag_text {
-     display: flex;
-     width: 100%;
-     height: 100%;
-     background: #00000059;
-     font-size: 14px;
-     color: white;
-     align-items: center;
-}
- @media screen and (max-width: 1024px) {
-     .container_header {
-         background: url(../images/photos/headertop.jpg) no-repeat center top / cover;
-    }
-     .center {
-         background: #0000009e;
-         align-items: center;
-    }
-     .center__text_left {
-         width: 89%;
-    }
-     .nav_header_footer {
-         font-size: 22px;
-    }
-     .container_our.studio {
-         flex-direction: column;
-         align-items: center;
-    }
-     .content_text_studio {
-         font-size: 22px;
-    }
-     .top_text_studio {
-         font-size: 40px;
-    }
-     .text_studio {
-         width: 82%;
-         line-height: 1.6;
-    }
-     .list_services1 {
-         height: 974px;
-    }
-     .name_service {
-         font-size: 25px;
-         margin-bottom: 20px;
-    }
-     a.button8 {
-         font-size: 20px;
-         margin: 41px;
-    }
-     .text_great_massage {
-         font-size: 28px;
-    }
-     .description_master {
-         font-size: 23px;
-    }
-}
- @media screen and (max-width: 1015px) {
-     .container_our.studio {
-         font-size: 15px;
-         flex-direction: column;
-         align-items: center;
-         align-content: safe;
-    }
-     .text_studio {
-         width: 76%;
-    }
-     .description_master {
-         font-size: 18px;
-    }
-}
- @media screen and (max-width: 980px) {
-     .hair_services {
-         font-size: 20px;
-    }
-}
- @media screen and (max-width: 900px) {
-     .title_text {
-         font-size: 20px;
-    }
-     .menu_hamb {
-         width: 55px;
-         height: 55px;
-    }
-     .pus {
-         font-size: 65px;
-    }
-     .center__text {
-         font-size: 30px;
-    }
-     .content_header {
-         font-size: 30px;
-    }
-     .nav_header_footer {
-         height: 35px;
-    }
-     a.button7 {
-         font-size: 20px;
-         padding: 19px;
-         margin: 22px;
-    }
-     .hair_services {
-         font-size: 20px;
-    }
-}
- @media screen and (max-width: 860px) {
-     .text_center.footer {
-         font-size: 15px;
-    }
-     .footer.right {
-         font-size: 15px;
-    }
-     .footer.left {
-         font-size: 18px;
-        /* margin-top: 39px;
+                         }
+                         
+                         .text_center.footer {
+                             display: flex;
+                             flex-direction: column;
+                             justify-content: space-around;
+                             font-size: 18px;
+                             margin: 24px;
+                             flex-grow: 1;
+                         }
+                         
+                         .footer.right {
+                             display: flex;
+                             flex-direction: column;
+                             justify-content: space-between;
+                             font-size: 18px;
+                             margin: 30px;
+                             flex-grow: 1;
+                         }
+                         
+                         span.color_makeup {
+                             font-size: 64px;
+                             color: #F77474;
+                             letter-spacing: -0.03em;
+                             text-shadow: 1px 1px 2px black, 0 0 4em red;
+                         }
+                         
+                         span.training {
+                             font-size: 40px;
+                             letter-spacing: 0.04em;
+                             color: white;
+                             margin-top: 50px;
+                             text-align: center;
+                             text-shadow: 1px 1px 2px black, 0 0 1em;
+                         }
+                         
+                         .laboratory {
+                             font-size: 48px;
+                             letter-spacing: 0.04em;
+                             color: white;
+                             font-weight: initial;
+                             text-align: center;
+                             text-shadow: 1px 1px 2px black, 0 0 4em white;
+                         }
+                         
+                         .phone a {
+                             text-decoration: none;
+                             color: white;
+                             display: flex;
+                             margin-left: 11px;
+                         }
+                         
+                         .service_holden.rev {
+                             flex-direction: column-reverse;
+                         }
+                         
+                         .footer_icon {
+                             width: 20px;
+                             height: 20px;
+                             background: url(../images/icons/hair.png) no-repeat center top / cover;
+                             flex-shrink: 0;
+                         }
+                         
+                         .footer_icon.br {
+                             background: url(../images/icons/brovicon.png) no-repeat center top / cover;
+                         }
+                         
+                         .footer_icon.make {
+                             background: url(../images/icons/make.png) no-repeat center top / cover;
+                         }
+                         
+                         .footer_icon.school {
+                             background: url(../images/icons/school.png) no-repeat center top / cover;
+                         }
+                         
+                         .footer_icon.catalog {
+                             background: url(../images/icons/149743.png) no-repeat center top / cover;
+                         }
+                         
+                         .footer_icon.address {
+                             background: url(../images/icons/address.png) no-repeat center top / cover;
+                         }
+                         
+                         .footer_icon.time {
+                             background: url(../images/icons/time.png) no-repeat center top / cover;
+                         }
+                         
+                         .footer_icon.tel {
+                             background: url(../images/icons/tel.png) no-repeat center top / cover;
+                         }
+                         
+                         .footer_icon.tel.school {
+                             width: 25px;
+                             height: 30px;
+                         }
+                         
+                         .footer {
+                             display: flex;
+                         }
+                         
+                         div#nav {
+                             display: flex;
+                             flex-direction: column;
+                         }
+                         
+                         .bag_hair {
+                             /* стилизация блоков для сервисов которые отоброжаются при нажатии на кнопку */
+                             height: 100%;
+                             width: 100%;
+                             display: flex;
+                             align-content: center;
+                             position: fixed;
+                             justify-content: center;
+                             z-index: 40;
+                             display: none;
+                             background: url(../images/photos/hairbagimg.jpg) no-repeat center top / cover;
+                         }
+                         
+                         .bag_hair.a {
+                             background: url(../images/photos/bagmakeimg.jpg) no-repeat center top / cover;
+                         }
+                         
+                         .bag_hair.b {
+                             background: url(../images/photos/bagbrowimg.jpg) no-repeat center top / cover;
+                         }
+                         
+                         .bag_text {
+                             display: flex;
+                             width: 100%;
+                             height: 100%;
+                             background: #00000059;
+                             font-size: 14px;
+                             color: white;
+                             align-items: center;
+                         }
+                         
+                         @media screen and (max-width: 1024px) {
+                             .container_header {
+                                 background: url(../images/photos/headertop.jpg) no-repeat center top / cover;
+                             }
+                             .center {
+                                 background: #0000009e;
+                                 align-items: center;
+                             }
+                             .center__text_left {
+                                 width: 89%;
+                             }
+                             .nav_header_footer {
+                                 font-size: 22px;
+                             }
+                             .container_our.studio {
+                                 flex-direction: column;
+                                 align-items: center;
+                             }
+                             .top_text_studio {
+                                 font-size: 40px;
+                             }
+                             .text_studio {
+                                 width: 82%;
+                                 line-height: 1.6;
+                             }
+                             .list_services1 {
+                                 height: 974px;
+                             }
+                             .name_service {
+                                 font-size: 25px;
+                                 margin-bottom: 20px;
+                             }
+                             a.button8 {
+                                 font-size: 20px;
+                                 margin: 41px;
+                             }
+                             .text_great_massage {
+                                 font-size: 28px;
+                             }
+                             .description_master {
+                                 font-size: 23px;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 1015px) {
+                             .container_our.studio {
+                                 font-size: 15px;
+                                 flex-direction: column;
+                                 align-items: center;
+                                 align-content: safe;
+                             }
+                             .text_studio {
+                                 width: 76%;
+                             }
+                             .description_master {
+                                 font-size: 18px;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 900px) {
+                             .title_text {
+                                 font-size: 20px;
+                             }
+                             .menu_hamb {
+                                 width: 55px;
+                                 height: 55px;
+                             }
+                             .pus {
+                                 font-size: 65px;
+                             }
+                             .center__text {
+                                 font-size: 30px;
+                             }
+                             .content_header {
+                                 font-size: 30px;
+                             }
+                             .nav_header_footer {
+                                 height: 35px;
+                             }
+                             a.button7 {
+                                 font-size: 20px;
+                                 padding: 19px;
+                                 margin: 22px;
+                             }
+                             .hair_services {
+                                 font-size: 20px;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 860px) {
+                             .text_center.footer {
+                                 font-size: 15px;
+                             }
+                             .footer.right {
+                                 font-size: 15px;
+                             }
+                             .footer.left {
+                                 font-size: 18px;
+                                 /* margin-top: 39px;
          */
-    }
-     .content.school {
-         font-size: 20px;
-    }
-     .logo_services.footer {
-         height: 98px;
-         width: 98px;
-         margin-left: 75px;
-    }
-     .picture {
-         display: none;
-    }
-     .picture.map {
-         width: 100%;
-    }
-}
- @media screen and (max-width: 810px) {
-     .hair_services {
-         font-size: 16px;
-    }
-}
- @media screen and (max-width: 800px) {
-     div#slides {
-         flex-grow: 1;
-    }
-     .slidesjs-navigation {
-         display: none!important;
-    }
-     ul.slidesjs-pagination {
-         display: none;
-    }
-     .title_text {
-         font-size: 18px;
-    }
-     .menu_hamb {
-         width: 50px;
-         height: 50px;
-    }
-     .social_icon {
-         width: 35px;
-         height: 35px;
-         margin-top: 10px;
-    }
-     .pus {
-         font-size: 68px;
-    }
-     .center__text {
-         font-size: 24px;
-    }
-     .content_header {
-         font-size: 19px;
-    }
-     a.button7 {
-         font-size: 18px;
-         padding: 15px;
-         margin: 20px;
-    }
-     .nav_header_footer {
-         height: 35px;
-    }
-     .nav_header_phone a {
-         font-size: 18px;
-    }
-     .name_service {
-         font-size: 20px;
-    }
-     .service {
-         font-size: 17px;
-    }
-     .price_service {
-         font-size: 21px;
-    }
-     a.button8 {
-         font-size: 16px;
-         padding: 8px;
-    }
-     .description_master {
-         font-size: 18px;
-         padding: 5px;
-    }
-     .top_text_studio {
-         padding: 19px;
-         font-size: 34px;
-    }
-     .text_studio {
-         font-size: 16px;
-         padding: 15px;
-    }
-     span.training {
-         font-size: 29px;
-    }
-     span.color_makeup {
-         font-size: 49px;
-    }
-     .laboratory {
-         font-size: 44px;
-    }
-     .content.school {
-         font-size: 17px;
-    }
-     .content_top.school {
-         width: 64%;
-    }
-     .footer_icon.tel.school {
-         width: 20px;
-         height: 22px;
-    }
-     .school.ft {
-         margin-top: 16px;
-    }
-     .footer.footer.left {
-         display: none;
-    }
-     .logo_services.footer {
-         display: none;
-    }
-     .text_center.footer {
-         font-size: 14px;
-         margin: 28px;
-         flex-direction: row;
-    }
-     .footer.right {
-         font-size: 14px;
-         margin: 37px;
-         flex-direction: row;
-    }
-     .container_footer {
-         height: 255px;
-         flex-direction: column;
-    }
-     .photo_studio {
-         width: 75%;
-         display: flex;
-    }
-}
- @media screen and (max-width: 785px) {
-     .container_footer {
-         flex-direction: row;
-         height: 100px;
-    }
-     .footer.text {
-         font-size: 13px;
-         display: none;
-    }
-     .footer_icon.address {
-         display: none;
-    }
-     .footer_icon.time {
-         display: none;
-    }
-     .footer.right {
-         margin: 30px;
-    }
-     .text_center.footer {
-         justify-content: space-between;
-    }
-     .footer_icon {
-         width: 30px;
-         height: 32px;
-    }
-}
- @media screen and (max-width: 750px) {
-     .hair_services {
-        /* width: 50%;
+                             }
+                             .content.school {
+                                 font-size: 20px;
+                             }
+                             .logo_services.footer {
+                                 height: 98px;
+                                 width: 98px;
+                                 margin-left: 75px;
+                             }
+                             .picture {
+                                 display: none;
+                             }
+                             .picture.map {
+                                 width: 100%;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 810px) {
+                             .hair_services {
+                                 font-size: 16px;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 800px) {
+                             div#slides {
+                                 flex-grow: 1;
+                             }
+                             .slidesjs-navigation {
+                                 display: none!important;
+                             }
+                             ul.slidesjs-pagination {
+                                 display: none;
+                             }
+                             .title_text {
+                                 font-size: 18px;
+                             }
+                             .menu_hamb {
+                                 width: 50px;
+                                 height: 50px;
+                             }
+                             .social_icon {
+                                 width: 35px;
+                                 height: 35px;
+                                 margin-top: 10px;
+                             }
+                             .pus {
+                                 font-size: 68px;
+                             }
+                             .center__text {
+                                 font-size: 24px;
+                             }
+                             .content_header {
+                                 font-size: 19px;
+                             }
+                             a.button7 {
+                                 font-size: 18px;
+                                 padding: 15px;
+                                 margin: 20px;
+                             }
+                             .nav_header_footer {
+                                 height: 35px;
+                             }
+                             .nav_header_phone a {
+                                 font-size: 18px;
+                             }
+                             .name_service {
+                                 font-size: 20px;
+                             }
+                             .service {
+                                 font-size: 17px;
+                             }
+                             .price_service {
+                                 font-size: 21px;
+                             }
+                             a.button8 {
+                                 font-size: 16px;
+                                 padding: 8px;
+                             }
+                             .description_master {
+                                 font-size: 18px;
+                                 padding: 5px;
+                             }
+                             .top_text_studio {
+                                 padding: 19px;
+                                 font-size: 34px;
+                             }
+                             .text_studio {
+                                 font-size: 16px;
+                                 padding: 15px;
+                             }
+                             span.training {
+                                 font-size: 29px;
+                             }
+                             span.color_makeup {
+                                 font-size: 49px;
+                             }
+                             .laboratory {
+                                 font-size: 44px;
+                             }
+                             .content.school {
+                                 font-size: 17px;
+                             }
+                             .content_top.school {
+                                 width: 64%;
+                             }
+                             .footer_icon.tel.school {
+                                 width: 20px;
+                                 height: 22px;
+                             }
+                             .school.ft {
+                                 margin-top: 16px;
+                             }
+                             .footer.footer.left {
+                                 display: none;
+                             }
+                             .logo_services.footer {
+                                 display: none;
+                             }
+                             .text_center.footer {
+                                 font-size: 14px;
+                                 margin: 28px;
+                                 flex-direction: row;
+                             }
+                             .footer.right {
+                                 font-size: 14px;
+                                 margin: 37px;
+                                 flex-direction: row;
+                             }
+                             .container_footer {
+                                 height: 255px;
+                                 flex-direction: column;
+                             }
+                             .photo_studio {
+                                 width: 75%;
+                                 display: flex;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 785px) {
+                             .container_footer {
+                                 flex-direction: row;
+                                 height: 100px;
+                             }
+                             .footer.text {
+                                 font-size: 13px;
+                                 display: none;
+                             }
+                             .footer_icon.address {
+                                 display: none;
+                             }
+                             .footer_icon.time {
+                                 display: none;
+                             }
+                             .footer.right {
+                                 margin: 30px;
+                             }
+                             .text_center.footer {
+                                 justify-content: space-between;
+                             }
+                             .footer_icon {
+                                 width: 30px;
+                                 height: 32px;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 750px) {
+                             .hair_services {
+                                 /* width: 50%;
          */
-         height: 640px;
-    }
-     .container_services {
-         justify-content: space-around;
-    }
-     .text_center.footer {
-         font-size: 12px;
-    }
-     .footer_icon {
-         width: 16px;
-         height: 16px;
-    }
-}
- @media screen and (max-width: 700px) {
-     .price_service {
-         font-size: 17px;
-    }
-     .container_services {
-         flex-wrap: wrap;
-    }
-}
- .scroll_left.right {
-     right: 0;
-     transform: rotate(180deg);
-}
- div#slides {/* top: 41%; *//* position: relative; */width: 100%;}
-
- @media screen and (max-width: 667px) {
-     .pinup {
-         font-size: 57px;
-    }
-     .studio {
-         font-size: 57px;
-    }
-     .title_text {
-         font-size: 15px;
-    }
-     .center__text {
-         font-size: 18px;
-    }
-     .content_header {
-         font-size: 17px;
-    }
-     .nav_header_footer {
-         height: 53px;
-         font-size: 13px;
-    }
-     .container_services {
-         height: max-content;
-    }
-     .list_services1 {
-         height: max-content;
-    }
-     .scroll_left {
-         display: none;
-    }
-     .scroll_left.right {
-         display: none;
-    }
-     .container_our.studio {
-         height: max-content;
-    }
-     .top_text_studio {
-         font-size: 30px;
-         padding: 6px;
-    }
-     .text_studio {
-         font-size: 14px;
-         line-height: 1.7;
-         padding: 10px;
-         margin: 0p;
-    }
-     a.button8 {
-         font-size: 14px;
-         padding: 6px;
-    }
-     .name_service {
-         font-size: 16px;
-    }
-     .logo_services {
-         width: 40px;
-         height: 40px;
-    }
-     .hair_services_h {
-         height: 384pt;
-    }
-     .component_socials_master {
-         display: none;
-    }
-     .description_master {
-         font-size: 13px;
-    }
-     span.training {
-         font-size: 22px;
-         margin-top: 20px;
-    }
-     .top_text.school {
-         padding: 5px;
-    }
-     span.color_makeup {
-         font-size: 44px;
-    }
-     .laboratory {
-         font-size: 38px;
-    }
-     .content.school {
-         font-size: 15px;
-         width: max-content;
-    }
-     .phone a {
-         font-size: 17px;
-    }
-     .col_content.school {
-         height: 60%;
-    }
-     .footer.right {
-         flex-grow: 0;
-    }
-     .footer_icon {
-         width: 20px;
-         height: 20px;
-    }
-     .container_footer {
-         height: 61px;
-         align-items: center;
-    }
-     .text_great_massage {
-         font-size: 14px;
-         background: #000000a8;
-    }
-}
- 
- @media screen and (max-width: 568px) {
-     .title_text {
-         font-size: 12px;
-    }
-     .pinup {
-         font-size: 48px;
-    }
-     .studio {
-         font-size: 47px;
-         margin-left: 13px;
-    }
-     .center__text {
-         font-size: 15px;
-    }
-     .content_header {
-         font-size: 14px;
-         margin: 0px;
-    }
-     a.button7 {
-         font-size: 15px;
-         padding: 9px;
-         margin: 13px;
-    }
-     .list_services1 {
-         height: max-content;
-         flex-wrap: wrap;
-    }
-     .container_services {
-         height: max-content;
-         width: 100%;
-    }
-     .hair_services {
-         height: 280px;
-         /* width: 188px; */
-    }
-     .service_ps {
-         width: 70%;
-    }
-     .service {
-         font-size: 14px;
-    }
-     .component_socials_master {
-         display: none;
-    }
-     .text_great_massage {
-         font-size: 12px;
-         background: #000000a1;
-    }
-     .menu_hamb {
-         width: 45px;
-         height: 45px;
-    }
-     .social_icon {
-         width: 30px;
-         height: 30px;
-         margin-top: 6px;
-    }
-     .nav-burger {
-         height: 38px;
-    }
-     .text_studio {
-         font-size: 13px;
-         line-height: 1.5;
-    }
-     .container_our.studio {
-         height: 27%;
-         font-size: 13;
-    }
-     .top_text_studio {
-         font-size: 30px;
-         padding: 5px;
-    }
-     .container_school {
-         height: 60%;
-    }
-     .top_text.school {
-         padding: 2px;
-    }
-     span.training {
-         font-size: 19px;
-    }
-     span.color_makeup {
-         font-size: 40px;
-    }
-     .laboratory {
-         font-size: 35px;
-    }
-     .col_content.school {
-         height: 62%;
-    }
-     .content.school {
-         font-size: 15px;
-    }
-     .description_master {
-         font-size: 13px;
-    }
-     a.button8 {
-         font-size: 14px;
-         margin-bottom: 17px;
-         padding: 2px;
-    }
-     .name_service {
-         font-size: 18px;
-    }
-     .hair_services_h {
-         font-size: 15px;
-        /* height: 406px;
+                                 height: 640px;
+                             }
+                             .container_services {
+                                 justify-content: space-around;
+                             }
+                             .text_center.footer {
+                                 font-size: 12px;
+                             }
+                             .footer_icon {
+                                 width: 16px;
+                                 height: 16px;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 700px) {
+                             .price_service {
+                                 font-size: 17px;
+                             }
+                             .container_services {
+                                 flex-wrap: wrap;
+                             }
+                         }
+                         
+                         .scroll_left.right {
+                             right: 0;
+                             transform: rotate(180deg);
+                         }
+                         
+                         div#slides {
+                             width: 100%;
+                         }
+                         
+                         @media screen and (max-width: 667px) {
+                             .pinup {
+                                 font-size: 57px;
+                             }
+                             .studio {
+                                 font-size: 57px;
+                             }
+                             .title_text {
+                                 font-size: 15px;
+                             }
+                             .center__text {
+                                 font-size: 18px;
+                             }
+                             .content_header {
+                                 font-size: 17px;
+                             }
+                             .nav_header_footer {
+                                 height: 53px;
+                                 font-size: 13px;
+                             }
+                             .container_services {
+                                 height: max-content;
+                             }
+                             .list_services1 {
+                                 height: max-content;
+                             }
+                             .scroll_left {
+                                 display: none;
+                             }
+                             .scroll_left.right {
+                                 display: none;
+                             }
+                             .container_our.studio {
+                                 height: max-content;
+                             }
+                             .top_text_studio {
+                                 font-size: 30px;
+                                 padding: 6px;
+                             }
+                             .text_studio {
+                                 font-size: 14px;
+                                 line-height: 1.7;
+                                 padding: 10px;
+                                 margin: 0p;
+                             }
+                             a.button8 {
+                                 font-size: 14px;
+                                 padding: 6px;
+                             }
+                             .name_service {
+                                 font-size: 16px;
+                             }
+                             .logo_services {
+                                 width: 40px;
+                                 height: 40px;
+                             }
+                             .hair_services_h {
+                                 height: 384pt;
+                             }
+                             .component_socials_master {
+                                 display: none;
+                             }
+                             .description_master {
+                                 font-size: 13px;
+                             }
+                             span.training {
+                                 font-size: 22px;
+                                 margin-top: 20px;
+                             }
+                             .top_text.school {
+                                 padding: 5px;
+                             }
+                             span.color_makeup {
+                                 font-size: 44px;
+                             }
+                             .laboratory {
+                                 font-size: 38px;
+                             }
+                             .content.school {
+                                 font-size: 15px;
+                                 width: max-content;
+                             }
+                             .phone a {
+                                 font-size: 17px;
+                             }
+                             .col_content.school {
+                                 height: 60%;
+                             }
+                             .footer.right {
+                                 flex-grow: 0;
+                             }
+                             .footer_icon {
+                                 width: 20px;
+                                 height: 20px;
+                             }
+                             .container_footer {
+                                 height: 61px;
+                                 align-items: center;
+                             }
+                             .text_great_massage {
+                                 font-size: 14px;
+                                 background: #000000a8;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 568px) {
+                             .title_text {
+                                 font-size: 12px;
+                             }
+                             .pinup {
+                                 font-size: 48px;
+                             }
+                             .studio {
+                                 font-size: 47px;
+                                 margin-left: 13px;
+                             }
+                             .center__text {
+                                 font-size: 15px;
+                             }
+                             .content_header {
+                                 font-size: 14px;
+                                 margin: 0px;
+                             }
+                             a.button7 {
+                                 font-size: 15px;
+                                 padding: 9px;
+                                 margin: 13px;
+                             }
+                             .list_services1 {
+                                 /* height: max-content; */
+                                 flex-wrap: wrap;
+                             }
+                             .container_services {
+                                 height: max-content;
+                                 width: 100%;
+                             }
+                             .hair_services {
+                                 height: 280px;
+                                 width: 100%;
+                             }
+                             .service_ps {
+                                 width: 70%;
+                             }
+                             .service {
+                                 font-size: 14px;
+                             }
+                             .component_socials_master {
+                                 display: none;
+                             }
+                             .text_great_massage {
+                                 font-size: 12px;
+                                 background: #000000a1;
+                             }
+                             .menu_hamb {
+                                 width: 45px;
+                                 height: 45px;
+                             }
+                             .social_icon {
+                                 width: 30px;
+                                 height: 30px;
+                                 margin-top: 6px;
+                             }
+                             .nav-burger {
+                                 height: 38px;
+                             }
+                             .text_studio {
+                                 font-size: 13px;
+                                 line-height: 1.5;
+                             }
+                             .container_our.studio {
+                                 height: 27%;
+                                 font-size: 13;
+                             }
+                             .top_text_studio {
+                                 font-size: 30px;
+                                 padding: 5px;
+                             }
+                             .container_school {
+                                 height: 60%;
+                             }
+                             .top_text.school {
+                                 padding: 2px;
+                             }
+                             span.training {
+                                 font-size: 19px;
+                             }
+                             span.color_makeup {
+                                 font-size: 40px;
+                             }
+                             .laboratory {
+                                 font-size: 35px;
+                             }
+                             .col_content.school {
+                                 height: 62%;
+                             }
+                             .content.school {
+                                 font-size: 16px;
+                             }
+                             .description_master {
+                                 font-size: 13px;
+                             }
+                             a.button8 {
+                                 font-size: 14px;
+                                 margin-bottom: 17px;
+                                 padding: 2px;
+                             }
+                             .name_service {
+                                 font-size: 18px;
+                             }
+                             .hair_services_h {
+                                 font-size: 15px;
+                                 /* height: 406px;
          */
-    }
-     .service_holden {
-         flex-basis: 30%;
-         height: 472px;
-         min-width: 50%;
-    }
-     .scroll_left {
-         display: none;
-    }
-     .scroll_left.right {
-         display: none;
-    }
-}
-@media screen and (max-width: 360px) {
-     .pinup {
-         font-size: 53px;
-    }
-     .studio {
-         font-size: 53px;
-    }
-     .nav_header_address {
-         display: none;
-    }
-     .nav_header_phone {
-         display: none;
-    }
-     .nav_header_time {
-         font-size: 14px;
-    }
-     a.button7 {
-         font-size: 17px;
-         padding: 13px;
-         margin: 13px;
-    }
-     .text_great_massage {
-         font-size: 12px;
-         background: #000000b3;
-    }
-     .container_services {
-         flex-direction: column;
-    }
-     .list_services1 {
-         flex-direction: column;
-    }
-     .service_holden {
-         width: 100%;
-         height: 640px;
-    }
-     .hair_services {
-         height: 640px;
-    }
-     .content_text_studio {
-         font-size: 12px;
-    }
-     .photo_studio {
-         width: 75%;
-    }
-     .scroll_left {
-         display: none;
-    }
-     .scroll_left.right {
-         display: none;
-    }
-     span.training {
-         font-size: 23px;
-         margin-top: 15px;
-    }
-     .laboratory {
-         font-size: 31px;
-    }
-     .top_text.school {
-         padding: 30px;
-    }
-     .content.school {
-         font-size: 15px;
-         line-height: 1.4;
-    }
-     .col_content.school {
-         height: 60%;
-    }
-     .container_footer {
-         height: 70px;
-    }
-     .footer_icon {
-         display: none;
-    }
-     .social_icon {
-         width: 30px;
-         height: 30px;
-    }
-}
- @media screen and (max-width: 320px) {
-    /*iPhone 5 */
-     .container_header {
-         background: #1aa3b0a6;
-    }
-     .pinup {
-         margin-left: 6px;
-         font-size: 50px;
-    }
-     .studio {
-         font-size: 50px;
-         margin-left: 8px;
-    }
-     .content_header {
-         font-size: 19px;
-    }
-     .title_text {
-         font-size: 13px;
-    }
-     .center__text {
-         font-size: 19px;
-    }
-     a.button7 {
-         font-size: 16px;
-         padding: 10px;
-         margin: 10px;
-    }
-     .nav_header_address {
-         display: none;
-    }
-     .nav_header_phone {
-         display: none;
-    }
-     .nav_header_time {
-         font-size: 14px;
-    }
-     .content_text_studio {
-         margin-left: 0px;
-         font-size: 11px;
-         line-height: 1.5;
-    }
-     .content.school {
-         font-size: 12px;
-    }
-     .phone a {
-         font-size: 16px;
-    }
-     .social_icon {
-         border-radius: 13px;
-         margin-top: 4px;
-    }
-     .container_footer {
-         height: 50px;
-         align-items: center;
-         background: black;
-    }
-     .menu_hamb {
-         width: 35px;
-         height: 35px;
-    }
-     .hamburger {
-         line-height: 13px;
-         font-size: 1.6em;
-    }
-     .text_great_massage {
-         font-size: 11px;
-    }
-     .great_massage {
-         align-items: center;
-    }
-     .list_services1 {
-         height: max-content;
-    }
-     .service_holden {
-         height: 530px;
-    }
-     .service_holden.rev {
-         flex-direction: column;
-    }
-     .hair_services_h {
-         height: 250px;
-    }
-     .description_master {
-         font-size: 15px;
-    }
-     .photo.school {
-         width: 100%;
-        /* display: none;
+                             }
+                             .service_holden {
+                                 flex-basis: 30%;
+                                 height: 472px;
+                                 min-width: 50%;
+                             }
+                             .scroll_left {
+                                 display: none;
+                             }
+                             .scroll_left.right {
+                                 display: none;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 360px) {
+                             .pinup {
+                                 font-size: 53px;
+                             }
+                             .studio {
+                                 font-size: 53px;
+                             }
+                             .nav_header_address {
+                                 display: none;
+                             }
+                             .nav_header_phone {
+                                 display: none;
+                             }
+                             .nav_header_time {
+                                 font-size: 14px;
+                             }
+                             a.button7 {
+                                 font-size: 17px;
+                                 padding: 13px;
+                                 margin: 13px;
+                             }
+                             .text_great_massage {
+                                 font-size: 12px;
+                                 background: #000000b3;
+                             }
+                             .container_services {
+                                 flex-direction: column;
+                             }
+                             .list_services1 {
+                                 flex-direction: column;
+                             }
+                             .service_holden {
+                                 width: 100%;
+                                 height: 640px;
+                             }
+                             .hair_services {
+                                 height: 640px;
+                             }
+                             .content_text_studio {
+                                 font-size: 12px;
+                             }
+                             .photo_studio {
+                                 width: 75%;
+                             }
+                             .scroll_left {
+                                 display: none;
+                             }
+                             .scroll_left.right {
+                                 display: none;
+                             }
+                             span.training {
+                                 font-size: 23px;
+                                 margin-top: 15px;
+                             }
+                             .laboratory {
+                                 font-size: 31px;
+                             }
+                             .top_text.school {
+                                 padding: 30px;
+                             }
+                             .content.school {
+                                 font-size: 15px;
+                                 line-height: 1.4;
+                             }
+                             .col_content.school {
+                                 height: 60%;
+                             }
+                             .container_footer {
+                                 height: 70px;
+                             }
+                             .footer_icon {
+                                 display: none;
+                             }
+                             .social_icon {
+                                 width: 30px;
+                                 height: 30px;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 375px) {
+                             .container_header {
+                                 height: 100vh;
+                             }
+                             .center__text_left {
+                                 width: 78%;
+                             }
+                             .text_great_massage {
+                                 padding: 40px;
+                                 font-size: 16px;
+                             }
+                             .pinup {
+                                 font-size: 50px;
+                             }
+                             .studio {
+                                 font-size: 49px;
+                             }
+                             .title_text {
+                                 font-size: 16px;
+                             }
+                             .center__text {
+                                 font-size: 19px;
+                                 margin-bottom: 10px;
+                             }
+                             .content_header {
+                                 font-size: 20px;
+                             }
+                             a.button7 {
+                                 font-size: 19px;
+                                 margin: 20px;
+                             }
+                             .nav_header_footer {
+                                 height: 63px;
+                                 font-size: 17px;
+                             }
+                             .nav_header_phone a {
+                                 font-size: 18px;
+                             }
+                             .list_services1 {
+                                 flex-direction: column;
+                             }
+                             .service_holden.rev {
+                                 flex-direction: column;
+                             }
+                             .social_icon {
+                                 width: 38px;
+                                 height: 38px;
+                             }
+                             .text_studio {
+                                 font-size: 14px;
+                                 line-height: 1.6;
+                             }
+                             .service {
+                                 font-size: 17px;
+                             }
+                             .price_service {
+                                 font-size: 19px;
+                             }
+                             .service_holden {
+                                 height: 660px;
+                             }
+                             .hair_services {
+                                 height: 70%;
+                             }
+                             .photo_service {
+                                 width: 100%;
+                                 /* height: max-content; */
+                             }
+                             .name_service {
+                                 font-size: 23px;
+                                 margin-bottom: 7px;
+                             }
+                             a.button8 {
+                                 margin: 20px;
+                                 font-size: 18px;
+                             }
+                             hr {
+                                 width: 70%;
+                             }
+                             .content_text_studio {
+                                 width: 100%;
+                                 margin: 0px;
+                             }
+                             .hair_services.brow {
+                                 width: 101%;
+                             }
+                             .description_master {
+                                 font-size: 19px;
+                             }
+                             .container_footer {
+                                 height: 64px;
+                                 background: black;
+                             }
+                             .footer_icon {
+                                 width: 20px;
+                                 height: 20px;
+                                 margin: 0px;
+                             }
+                             .phone a {
+                                 margin-left: 8px;
+                                 font-size: 19px;
+                             }
+                             .text_center.footer {
+                                 margin-left: 3px;
+                                 margin-right: 0px;
+                                 justify-content: space-around;
+                             }
+                             .footer.right {
+                                 margin-left: 0px;
+                                 margin: 30px;
+                                 /* width: 40%; */
+                             }
+                             .content_header {
+                                 font-size: 17px;
+                             }
+                             .pinup {
+                                 font-size: 49px;
+                             }
+                             .col_content.school {
+                                 height: 70%;
+                             }
+                             .footer.right {
+                                 width: 80%;
+                             }
+                         }
+                         
+                         @media screen and (max-width: 320px) {
+                             /*iPhone 5 */
+                             .container_header {
+                                 background: #1aa3b0a6;
+                             }
+                             .pinup {
+                                 margin-left: 6px;
+                                 font-size: 50px;
+                             }
+                             .studio {
+                                 font-size: 50px;
+                                 margin-left: 8px;
+                             }
+                             .content_header {
+                                 font-size: 19px;
+                             }
+                             .title_text {
+                                 font-size: 13px;
+                             }
+                             .center__text {
+                                 font-size: 19px;
+                             }
+                             a.button7 {
+                                 font-size: 16px;
+                                 padding: 10px;
+                                 margin: 10px;
+                             }
+                             .nav_header_address {
+                                 display: none;
+                             }
+                             .nav_header_phone {
+                                 display: none;
+                             }
+                             .nav_header_time {
+                                 font-size: 14px;
+                             }
+                             .content_text_studio {
+                                 margin-left: 0px;
+                                 font-size: 11px;
+                                 line-height: 1.5;
+                             }
+                             .content.school {
+                                 font-size: 12px;
+                             }
+                             .phone a {
+                                 font-size: 16px;
+                             }
+                             .social_icon {
+                                 border-radius: 13px;
+                                 margin-top: 4px;
+                             }
+                             .container_footer {
+                                 height: 50px;
+                                 align-items: center;
+                                 background: black;
+                             }
+                             .menu_hamb {
+                                 width: 35px;
+                                 height: 35px;
+                             }
+                             .hamburger {
+                                 line-height: 13px;
+                                 font-size: 1.6em;
+                             }
+                             .text_great_massage {
+                                 font-size: 11px;
+                             }
+                             .great_massage {
+                                 align-items: center;
+                             }
+                             .list_services1 {
+                                 height: max-content;
+                             }
+                             .service_holden {
+                                 height: 530px;
+                             }
+                             .service_holden.rev {
+                                 flex-direction: column;
+                             }
+                             .hair_services_h {
+                                 height: 250px;
+                             }
+                             .description_master {
+                                 font-size: 15px;
+                             }
+                             .photo.school {
+                                 width: 100%;
+                                 /* display: none;
          */
-        /* position: absolute;
+                                 /* position: absolute;
          */
-         background: url(../images/photos/school.jpg) no-reped center top / cover;
-    }
-     .content_top.school {
-        /* opacity: 0.7;
-         */
-        /* justify-content: center;
-         */
-         width: 77%;
-    }
-     .school_opas {
-         background: #00000099;
-         display: n;
-    }
-     .container_school {
-         flex-direction: row-reverse;
-    }
-     .content.school {
-         font-size: 12px;
-    }
-     .school.ft {
-         margin-top: 5px;
-    }
-}
-/* iphone 6 */
- @media screen and (max-width: 375px) {
-     .container_header {
-         background: #1aa3b0a6;
-         height: 100vh;
-    }
-     .pinup {
-         font-size: 50px;
-    }
-     .studio {
-         font-size: 50px;
-    }
-     .title_text {
-         font-size: 15px;
-    }
-     .center__text {
-         font-size: 19px;
-         margin-bottom: 10px;
-    }
-     .content_header {
-         font-size: 20px;
-    }
-     a.button7 {
-         font-size: 19px;
-         margin: 20px;
-    }
-     .nav_header_footer {
-         height: 40px;
-         font-size: 11px;
-    }
-     .nav_header_phone a {
-         font-size: 13px;
-    }
-     .social_icon {
-         width: 38px;
-         height: 37px;
-    }
-     .text_studio {
-         font-size: 12px;
-         line-height: 1.6;
-    }
-     .photo_service {
-         width: 100%;
-    }
-     .name_service {
-         font-size: 14px;
-    }
-     hr {
-         width: 70%;
-    }
-     .hair_services.brow {
-         width: 101%;
-    }
-     .description_master {
-         font-size: 12px;
-    }
-     .container_footer {
-         height: 64px;
-         background: black;
-    }
-     .footer_icon {
-         width: 20px;
-         height: 20px;
-         margin: 0px;
-    }
-     .phone a {
-         margin-left: 8px;
-         font-size: 18px;
-    }
-     .text_center.footer {
-         margin-left: 3px;
-         margin-right: 0px;
-         justify-content: space-around;
-    }
-     .footer.right {
-         margin-left: 0px;
-         margin: 30px;
-         width: 40%;
-    }
-     .content_header {
-         font-size: 15px;
-    }
-     .pinup {
-         font-size: 25px;
-    }
-}
- 
-/* iPad Pro */
-
+                                 background: url(../images/photos/school.jpg) no-reped center top / cover;
+                             }
+                             .content_top.school {
+                                 width: 77%;
+                             }
+                             .school_opas {
+                                 background: #00000099;
+                                 display: n;
+                             }
+                             .container_school {
+                                 flex-direction: row-reverse;
+                             }
+                             .content.school {
+                                 font-size: 12px;
+                             }
+                             .school.ft {
+                                 margin-top: 5px;
+                             }
+                         }
