@@ -855,7 +855,7 @@
                  background: url(../images/photos/headertop.jpg) no-repeat center top / cover;
              }
              .center {
-                 background: #0000009e;
+                 background: #00000070;
                  align-items: center;
              }
              .center__text_left {
@@ -1151,6 +1151,9 @@
              .center__text_left {
                  height: 256px;
              }
+             .component_socials {
+                 margin-right: 0px;
+             }
              .pus.animated.flip {
                  margin-bottom: 11px;
                  align-items: center;
@@ -1380,6 +1383,27 @@
              }
          }
          
+         @media screen and (max-width: 414px) {
+             .center__text_left {
+                 margin-left: 21px;
+             }
+             .title_text {
+                 font-size: 15px;
+             }
+             .pinup {
+                 font-size: 54px;
+             }
+             .studio {
+                 font-size: 52px;
+             }
+             .center__text {
+                 font-size: 18px;
+             }
+             .content_header {
+                 font-size: 17px;
+             }
+         }
+         
          @media screen and (max-width: 375px) {
              .center {
                  height: 53%;
@@ -1393,6 +1417,7 @@
              .center__text_left {
                  width: 79%;
                  height: 100%;
+                 margin-left: 32px;
              }
              .text_great_massage {
                  padding: 40px;
@@ -1419,8 +1444,9 @@
                  margin: 20px;
              }
              .nav_header_footer {
-                 height: 63px;
-                 font-size: 17px;
+                 height: 71px;
+                 font-size: 15px;
+                 flex-direction: column;
              }
              .nav_header_phone a {
                  font-size: 18px;
@@ -1436,14 +1462,16 @@
                  height: 38px;
              }
              .text_studio {
-                 font-size: 14px;
-                 line-height: 1.6;
+                 font-size: 16px;
+                 /* line-height: 1.6; */
+                 margin: 15px;
+                 padding: 8px;
              }
              .service {
-                 font-size: 17px;
+                 font-size: 21px;
              }
              .price_service {
-                 font-size: 19px;
+                 font-size: 22px;
              }
              .service_holden {
                  height: 660px;
@@ -1461,6 +1489,7 @@
              a.button8 {
                  margin: 20px;
                  font-size: 18px;
+                 padding: 9px;
              }
              hr {
                  width: 70%;
