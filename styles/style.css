@@ -1,4 +1,4 @@
- body {
+         body {
      display: flex;
      color: white;
      font-family: Arial, Helvetica, sans-serif;
@@ -1586,7 +1586,20 @@
  @media screen and (max-width: 320px) {
      /*iPhone 5 */
      .container_header {
-         background: #1aa3b0a6;
+         background: url(../images/photos/headertop.jpg) no-repeat center top / cover;
+     }
+     .center {
+         height: 61%;
+         justify-content: space-between;
+     }
+     .center__text_left {
+         height: 100%;
+         width: 100%;
+         margin:  0px;
+     }
+     .pus.animated.flip {
+         align-items: center;
+         margin: 8px;
      }
      .pinup {
          margin-left: 6px;
@@ -1597,18 +1610,22 @@
          margin-left: 8px;
      }
      .content_header {
-         font-size: 19px;
+         font-size: 17px;
+         margin-bottom: 8px;
+         align-items: center;
      }
      .title_text {
          font-size: 13px;
      }
      .center__text {
-         font-size: 19px;
+         font-size: 18px;
+         align-items: center;
      }
      a.button7 {
          font-size: 16px;
-         padding: 10px;
-         margin: 10px;
+         padding: 11px;
+         margin: 32px;
+         margin-bottom: 6px;
      }
      .nav_header_address {
          display: none;
@@ -1632,7 +1649,9 @@
      }
      .social_icon {
          border-radius: 13px;
-         margin-top: 4px;
+         /* margin-top: 4px; */
+         height:  30px;
+         width: 30px;
      }
      .container_footer {
          height: 50px;
@@ -1670,10 +1689,6 @@
      }
      .photo.school {
          width: 100%;
-         /* display: none;
-         */
-         /* position: absolute;
-         */
          background: url(../images/photos/school.jpg) no-reped center top / cover;
      }
      .content_top.school {
@@ -1690,6 +1705,4 @@
          font-size: 12px;
      }
      .school.ft {
-         margin-top: 5px;
-     }
- 
+         margin-top: 5px
