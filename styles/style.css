@@ -1380,91 +1380,19 @@
              }
          }
          
-         @media screen and (max-width: 360px) {
-             .pinup {
-                 font-size: 53px;
-             }
-             .studio {
-                 font-size: 53px;
-             }
-             .nav_header_address {
-                 display: none;
-             }
-             .nav_header_phone {
-                 display: none;
-             }
-             .nav_header_time {
-                 font-size: 14px;
-             }
-             a.button7 {
-                 font-size: 17px;
-                 padding: 13px;
-                 margin: 13px;
-             }
-             .text_great_massage {
-                 font-size: 12px;
-                 background: #000000b3;
-             }
-             .container_services {
-                 flex-direction: column;
-             }
-             .list_services1 {
-                 flex-direction: column;
-             }
-             .service_holden {
-                 width: 100%;
-                 height: 640px;
-             }
-             .hair_services {
-                 height: 640px;
-             }
-             .content_text_studio {
-                 font-size: 12px;
-             }
-             .photo_studio {
-                 width: 75%;
-             }
-             .scroll_left {
-                 display: none;
-             }
-             .scroll_left.right {
-                 display: none;
-             }
-             span.training {
-                 font-size: 23px;
-                 margin-top: 15px;
-             }
-             .laboratory {
-                 font-size: 31px;
-             }
-             .top_text.school {
-                 padding: 30px;
-             }
-             .content.school {
-                 font-size: 15px;
-                 line-height: 1.4;
-             }
-             .col_content.school {
-                 height: 60%;
-             }
-             .container_footer {
-                 height: 70px;
-             }
-             .footer_icon {
-                 display: none;
-             }
-             .social_icon {
-                 width: 30px;
-                 height: 30px;
-             }
-         }
-         
          @media screen and (max-width: 375px) {
+             .center {
+                 height: 53%;
+             }
+             .component_socials {
+                 margin-right: 0px;
+             }
              .container_header {
                  height: 100vh;
              }
              .center__text_left {
-                 width: 78%;
+                 width: 79%;
+                 height: 100%;
              }
              .text_great_massage {
                  padding: 40px;
@@ -1580,6 +1508,85 @@
              }
              .footer.right {
                  width: 80%;
+             }
+         }
+         
+         @media screen and (max-width: 360px) {
+             .pinup {
+                 font-size: 53px;
+             }
+             .studio {
+                 font-size: 53px;
+             }
+             .nav_header_address {
+                 display: none;
+             }
+             .nav_header_phone {
+                 display: none;
+             }
+             .nav_header_time {
+                 font-size: 14px;
+             }
+             a.button7 {
+                 font-size: 17px;
+                 padding: 13px;
+                 margin: 13px;
+             }
+             .text_great_massage {
+                 font-size: 12px;
+                 background: #000000b3;
+             }
+             .container_services {
+                 flex-direction: column;
+             }
+             .list_services1 {
+                 flex-direction: column;
+             }
+             .service_holden {
+                 width: 100%;
+                 height: 640px;
+             }
+             .hair_services {
+                 height: 640px;
+             }
+             .content_text_studio {
+                 font-size: 12px;
+             }
+             .photo_studio {
+                 width: 75%;
+             }
+             .scroll_left {
+                 display: none;
+             }
+             .scroll_left.right {
+                 display: none;
+             }
+             span.training {
+                 font-size: 23px;
+                 margin-top: 15px;
+             }
+             .laboratory {
+                 font-size: 31px;
+             }
+             .top_text.school {
+                 padding: 30px;
+             }
+             .content.school {
+                 font-size: 15px;
+                 line-height: 1.4;
+             }
+             .col_content.school {
+                 height: 60%;
+             }
+             .container_footer {
+                 height: 70px;
+             }
+             .footer_icon {
+                 display: none;
+             }
+             .social_icon {
+                 width: 30px;
+                 height: 30px;
              }
          }
          
@@ -1707,4 +1714,4 @@
              .school.ft {
                  margin-top: 5px
              }
-         }
+            
