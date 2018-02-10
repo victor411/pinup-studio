@@ -1341,8 +1341,20 @@
                  .title_text {
                      font-size: 12px;
                  }
+                 .center {
+                     height: 69%;
+                 }
+                 .center__text_left {
+                     height: 100%;
+                 }
                  .pinup {
                      font-size: 48px;
+                 }
+                 hr {
+                     width: 60%;
+                 }
+                 .photo_service {
+                     /* flex-grow: 1; */
                  }
                  .studio {
                      font-size: 47px;
@@ -1350,6 +1362,7 @@
                  }
                  .center__text {
                      font-size: 15px;
+                     margin-bottom: 9px;
                  }
                  .content_header {
                      font-size: 14px;
@@ -1360,8 +1373,11 @@
                      padding: 9px;
                      margin: 13px;
                  }
+                 .service_holden.rev {
+                     width: 30%;
+                 }
                  .list_services1 {
-                     flex-wrap: wrap;
+                     flex-direction: row;
                  }
                  .container_services {
                      height: max-content;
@@ -1370,6 +1386,7 @@
                  .hair_services {
                      height: 280px;
                      width: 100%;
+                     flex-grow: 1;
                  }
                  .service_ps {
                      width: 70%;
@@ -1446,7 +1463,8 @@
                  .service_holden {
                      flex-basis: 30%;
                      height: 472px;
-                     min-width: 50%;
+                     /* min-width: 50%; */
+                     width: 33%;
                  }
                  .scroll_left {
                      display: none;
@@ -1801,10 +1819,10 @@
                      margin-bottom: 6px;
                  }
                  .nav_header_address {
-                     display: none;
+                     display: flex;
                  }
                  .nav_header_phone {
-                     display: none;
+                     display: flex;
                  }
                  .nav_header_time {
                      font-size: 14px;
@@ -1878,5 +1896,3 @@
                      font-size: 12px;
                  }
              }
-             
-               
