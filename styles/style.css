@@ -1131,7 +1131,7 @@
              
              @media screen and (max-width: 736px) {
                  .text_great_massage {
-                     font-size: 17px;
+                     font-size: 18px;
                  }
                  .center {
                      height: 69%;
@@ -1457,6 +1457,9 @@
              }
              
              @media screen and (max-width: 414px) {
+                 .text_great_massage {
+                     font-size: 16px;
+                 }
                  .center__text_left {
                      margin-left: 21px;
                      height: 100%;
