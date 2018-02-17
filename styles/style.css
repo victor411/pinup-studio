@@ -1224,6 +1224,12 @@
                          }
                          
                          @media screen and (max-width: 667px) {
+                             .center {
+                                 height: 50%;
+                             }
+                             .content_header {
+                                 font-size: 16px;
+                             }
                              .center__text_left {
                                  height: 256px;
                              }
@@ -1332,149 +1338,20 @@
                                  align-items: center;
                              }
                              .text_great_massage {
-                                 font-size: 14px;
+                                 font-size: 17px;
                                  background: #000000a8;
                              }
                          }
                          
                          @media screen and (max-width: 568px) {
-                             .title_text {
-                                 font-size: 12px;
-                             }
-                             .center {
-                                 height: 69%;
-                             }
-                             .center__text_left {
-                                 height: 100%;
-                             }
-                             .pinup {
-                                 font-size: 48px;
-                             }
-                             hr {
-                                 width: 60%;
-                             }
-                             .studio {
-                                 font-size: 47px;
-                                 margin-left: 13px;
-                             }
-                             .center__text {
-                                 font-size: 15px;
-                                 margin-bottom: 9px;
-                             }
-                             .content_header {
-                                 font-size: 14px;
-                                 margin: 0px;
-                             }
-                             a.button7 {
-                                 font-size: 15px;
-                                 padding: 9px;
-                                 margin: 13px;
-                             }
-                             .service_holden.rev {
-                                 width: 30%;
-                             }
-                             .list_services1 {
-                                 flex-direction: row;
-                                 height: 100%;
-                             }
-                             .container_services {
-                                 height: max-content;
-                                 width: 100%;
-                             }
-                             .hair_services {
-                                 height: 280px;
-                                 width: 100%;
-                                 flex-grow: 1;
-                             }
-                             .service_ps {
-                                 width: 70%;
-                             }
-                             .service {
-                                 font-size: 14px;
-                             }
-                             .component_socials_master {
-                                 display: none;
-                             }
                              .text_great_massage {
-                                 font-size: 12px;
-                                 background: #000000a1;
-                             }
-                             .menu_hamb {
-                                 width: 45px;
-                                 height: 45px;
-                             }
-                             .social_icon {
-                                 width: 30px;
-                                 height: 30px;
-                                 margin-top: 6px;
-                             }
-                             .nav-burger {
-                                 height: 38px;
-                             }
-                             .text_studio {
-                                 font-size: 16px;
-                                 line-height: 1.5;
-                             }
-                             .container_our.studio {
-                                 height: 27%;
-                                 font-size: 13;
-                             }
-                             .top_text_studio {
-                                 font-size: 30px;
-                                 padding: 5px;
-                             }
-                             .container_school {
-                                 height: 60%;
-                             }
-                             .top_text.school {
-                                 padding: 2px;
-                             }
-                             span.training {
-                                 font-size: 19px;
-                             }
-                             span.color_makeup {
-                                 font-size: 40px;
-                             }
-                             .laboratory {
-                                 font-size: 35px;
-                             }
-                             .col_content.school {
-                                 height: 69%;
-                             }
-                             .content.school {
-                                 font-size: 16px;
-                             }
-                             .description_master {
-                                 font-size: 13px;
-                             }
-                             a.button8 {
                                  font-size: 14px;
-                                 margin-bottom: 17px;
-                                 padding: 2px;
-                             }
-                             .name_service {
-                                 font-size: 18px;
-                             }
-                             .hair_services_h {
-                                 font-size: 15px;
-                             }
-                             .service_holden {
-                                 flex-basis: 30%;
-                                 height: 472px;
-                                 /* min-width: 50%; */
-                                 width: 33%;
-                             }
-                             .scroll_left {
-                                 display: none;
-                             }
-                             .scroll_left.right {
-                                 display: none;
                              }
                          }
                          
                          @media screen and (max-width: 414px) {
                              .text_great_massage {
-                                 font-size: 16px;
+                                 font-size: 13px;
                              }
                              .center__text_left {
                                  margin-left: 21px;
@@ -1499,7 +1376,7 @@
                                  justify-content: center;
                              }
                              .center {
-                                 height: 46%;
+                                 height: 54%;
                              }
                              a.button7 {
                                  font-size: 17px;
@@ -1570,7 +1447,7 @@
                          
                          @media screen and (max-width: 375px) {
                              .center {
-                                 height: 53%;
+                                 height: 58%;
                              }
                              .component_socials {
                                  margin-right: 0px;
@@ -1585,7 +1462,7 @@
                              }
                              .text_great_massage {
                                  padding: 40px;
-                                 font-size: 16px;
+                                 font-size: 15px;
                              }
                              .pinup {
                                  font-size: 50px;
@@ -1730,7 +1607,7 @@
                                  margin: 13px;
                              }
                              .text_great_massage {
-                                 font-size: 12px;
+                                 font-size: 13px;
                                  background: #000000b3;
                              }
                              .container_services {
@@ -1870,7 +1747,8 @@
                                  font-size: 1.6em;
                              }
                              .text_great_massage {
-                                 font-size: 11px;
+                                 font-size: 13px;
+                                 height: 100%;
                              }
                              .great_massage {
                                  align-items: center;
